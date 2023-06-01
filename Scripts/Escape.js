@@ -1,5 +1,6 @@
 padlockCode = "replace with padlock code";
 
 function padlock() {
-    widow.open("https://www.tutorialspoint.com/index.htm",  "", "width=300, height=300");
+    let params = 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=400,height=600,left=530,top=150';
+    window.open("padlock.html",  "", params);
 }
