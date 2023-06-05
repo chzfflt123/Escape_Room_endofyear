@@ -4,21 +4,33 @@
 - *Platforms*: GitHub, VSCode
 - *Contributers*: Bomie Jun, Dyanne Lee, Juna Lee
 
-## Ideas:
-- KEY to open DOOR
-- KEY behind WHITEBOARD
-- HAMMER to break WHITEBOARD
-- HAMMER in FIRST CABINET
-- NUMBER PAD on FIRST CABINET
- - PERIODIC TABLE locked in LARGE CABINET
-  - 3 KEYS to open LARGE CABINET
-   - 1 KEY in OTHER CABINET
-    - OTHER CABINET KEY inside AIR CONDITIONER
-    - SCREW DRIVER to open AIR CONDITIONER
-    - SCREW DRIVER in a BOX
-   - 2 KEY in PLANT
-    - HINT on BOARD in plain text with capitalizations
-  - 3 KEY on PULL DOWN CHARGER THING
- - PAINTING locked in PHONE
-  - charge PHONE prior to use
-  - PASSWORD for phone on WHITEBOARD
+## Base code:
+<!-- CTRL+/ comment -->
+<!-- html:5 setup -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/public/stylesheets/stylesheet1.css">
+        <title>Escape Room</title>
+        <style>
+            body {
+                background-image: url('images/airconditioner_inside_withkey.jpg');
+                background-size: cover;
+            }
+        </style>
+    </head>
+
+<body>
+
+    <!-- Keep at bottom -->
+    <script src="scripts/Escape.js"></script>
+</body>
+
+</html>
+
