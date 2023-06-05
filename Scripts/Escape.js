@@ -6,5 +6,14 @@ function combination_lock() {
 }
 
 function updateCode(id) {
-    
+    document.getElementById('display').innerHTML += id;
+    if (id == "#") {
+        document.getElementById('display').innerHTML = "";
+    }
+    if (id == "*") {
+        string = document.getElementById('display').innerText;
+        newcode = string.substring(0,string.length-2);
+        
+        document.getElementById('display').innerHTML = newcode;
+    }
 }

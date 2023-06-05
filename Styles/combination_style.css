@@ -30,4 +30,6 @@ h1 {
     align-self:center;
     border-color:black;
     border-radius:3px;
+    font-size:42px;
+    text-align:right;
 }
