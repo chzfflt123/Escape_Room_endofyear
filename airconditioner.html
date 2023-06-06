@@ -16,13 +16,25 @@
                 background-image: url('images/airconditioner.jpg');
                 background-size: cover;
             }
+
+            #inventory {
+                height: 750px;
+                width: auto;
+                position: absolute;
+                left: 350px;
+                top: 50px;
+                cursor: default;
+            }
         </style>
+        
     </head>
 
 <body>
-    <ul id="slide-out" class="sidenav">
+    <!-- <ul id="slide-out" class="sidenav">
         <li>
-            <div class="user-view"></div>
+            <div class="user-view">
+
+            </div>
         </li>
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -43,12 +55,9 @@
             $('.sidenav').sidenav();
         });
     </script> -->
-
-    let c = document.getElementById("myCanvas");
-    let ctx = c.getContext("2d");
-    ctx.beginPath();
-    ctx.rect(20, 20, 150, 100);
-    ctx.stroke();
+    <a>
+        <img id="inventory" src = "Images\inventory.png"/>
+    </a>
     
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
