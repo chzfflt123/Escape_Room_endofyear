@@ -1,5 +1,5 @@
 body {
-    background-color:#222222;
+    background-color:#1c1c1c;
 }
 
 button {
@@ -9,7 +9,7 @@ button {
     border-radius: 1px;
     font-size:38px;
     margin-bottom:3px;
-    background-color:#c7c7c7;
+    background-color:#dfdfdf;
 }
 
 .first {
@@ -23,7 +23,7 @@ h1 {
 }
 
 #display {
-    background-color:#7c7c7c;
+    background-color:#656565;
     margin-left:17px;
     margin-top:10px;
     margin-bottom:7px;
