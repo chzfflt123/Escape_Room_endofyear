@@ -23,4 +23,7 @@ function checkCode() {
     if (document.getElementById('display').innerText == combinationCode) {
         window.close();
     }
+    else {
+        document.getElementById('display').innerText = "";
+    }
 }
