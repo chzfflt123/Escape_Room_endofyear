@@ -1,5 +1,5 @@
-combinationCode = "77533416";
-// Possible codes: Irises: 77 53 34 16, 
+combinationCode = "16859286";
+// Saturn
 
 function combination_lock() {
     let params = 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=400,height=680,left=530,top=150';
