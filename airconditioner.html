@@ -13,16 +13,28 @@
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('images/airconditioner.jpg');
+                background-image: url('Images/airconditioner.jpg');
                 background-size: cover;
             }
+
+            #inventory {
+                height: 750px;
+                width: auto;
+                position: absolute;
+                left: 350px;
+                top: 50px;
+                cursor: default;
+            }
         </style>
+        
     </head>
 
 <body>
-    <ul class="sidenav">
+    <!-- <ul id="slide-out" class="sidenav">
         <li>
-            <div class="user-view"></div>
+            <div class="user-view">
+
+            </div>
         </li>
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -42,7 +54,10 @@
         $(document).ready(function(){
             $('.sidenav').sidenav();
         });
-    </script>
+    </script> -->
+    <a>
+        <img id="inventory" src = "Images\inventory.png"/>
+    </a>
     
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
