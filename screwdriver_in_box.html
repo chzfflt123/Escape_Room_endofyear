@@ -13,7 +13,7 @@
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('Images/screwdriver_in_box.jpg');
+                background-image: url('Images/screwdriver_in_box1.jpg');
                 background-size: cover;
             }
 
@@ -21,8 +21,8 @@
                 height: 175px;
                 width: auto;
                 position: absolute;
-                margin-left: 324px;
-                margin-top: 291px;
+                left: 344px;
+                top: 310px;
                 cursor: default;
             }
             
@@ -43,7 +43,6 @@
         }
     </script>
 
-    <h4>Inventory:</h4>
     <ul id="inventory-items"></ul>
 
     <script>
@@ -57,6 +56,11 @@
                 li.textContent = tool;
                 inventoryList.appendChild(li);
             });
+            
+            if(inventoryList.includes('screwdriver')) {
+                const Image = document.createElement('Image');
+                Image.innerHTML = "<img src=\"Images/screwdriver.jpg\"/>"
+            }
     </script>
     
     <!-- Keep at bottom -->
