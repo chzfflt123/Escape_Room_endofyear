@@ -1,0 +1,43 @@
+<!-- CTRL+/ comment -->
+<!-- html:5 setup -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/public/stylesheets/stylesheet1.css">
+        <title>Escape Room</title>
+        <style>
+            body {
+                background-image: url('images/small_board.jpg');
+                background-size: cover;
+            }
+        </style>
+    </head>
+
+<body>
+    <h4>Inventory:</h4>
+    <ul id="inventory-items"></ul>
+
+    <script>
+            // Retrieve the selectedSymptoms array from localStorage
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+            console.log(inventory)
+            // Display the selected symptoms in an unordered list
+            const inventoryList = document.getElementById('inventory-items');
+            inventory.forEach(tool => {
+                const li = document.createElement('li');
+                li.textContent = tool;
+                inventoryList.appendChild(li);
+            });
+    </script>
+
+    <!-- Keep at bottom -->
+    <script src="scripts/Escape.js"></script>
+</body>
+
+</html>
