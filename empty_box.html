@@ -13,36 +13,13 @@
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('Images/airconditioner_inside_withkey.jpg');
+                background-image: url('images/empty_box.jpg');
                 background-size: cover;
             }
-
-            #key {
-                height: 175px;
-                width: auto;
-                position: absolute;
-                margin-left: 324px;
-                margin-top: 291px;
-                cursor: default;
-            }
-            
         </style>
     </head>
 
 <body>
-    <a onclick = "appendInventory()">
-        <img  id="key" src = "Images\screwdriver.png"/>
-    </a>
-
-    <script>
-        function appendInventory() {
-            let data = [];
-            data.push('airconditioner_key');
-            localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'airconditioner_inside.html';
-        }
-    </script>
-
     <h4>Inventory:</h4>
     <ul id="inventory-items"></ul>
 
@@ -58,12 +35,9 @@
                 inventoryList.appendChild(li);
             });
     </script>
-    
+
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
-
 </body>
-
-
 
 </html>
