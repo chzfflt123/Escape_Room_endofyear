@@ -13,11 +13,11 @@
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('Images/airconditioner_inside_withkey.jpg');
+                background-image: url('Images/plants.jpg');
                 background-size: cover;
             }
 
-            #key {
+            #plant {
                 height: 175px;
                 width: auto;
                 position: absolute;
@@ -30,18 +30,9 @@
     </head>
 
 <body>
-    <a onclick = "appendInventory()">
-        <img  id="key" src = "Images\screwdriver.png"/>
+    <a href = "plants_from_top.html">
+        <img  id="plant" src = "Images\screwdriver.png"/>
     </a>
-
-    <script>
-        function appendInventory() {
-            let data = [];
-            data.push('airconditioner_key');
-            localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'airconditioner_inside.html';
-        }
-    </script>
 
     <h4>Inventory:</h4>
     <ul id="inventory-items"></ul>
