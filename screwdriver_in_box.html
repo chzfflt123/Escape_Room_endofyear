@@ -30,12 +30,40 @@
     </head>
 
 <body>
-    <a href = "airconditioner.html">
-        <img id="screwdriver" src = "Images/screwdriver.png"/>
+    <a onclick = "appendInventory()">
+        <img  id="screwdriver" src = "Images\screwdriver.png"/>
     </a>
+
+    <script>
+        function appendInventory() {
+            let data = [];
+            data.push('screwdriver');
+            localStorage.setItem('inventory', JSON.stringify(data));
+            window.location = 'empty_box.html';
+        }
+    </script>
+
+    <h4>Inventory:</h4>
+    <ul id="inventory-items"></ul>
+
+    <script>
+            // Retrieve the selectedSymptoms array from localStorage
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+            console.log(inventory)
+            // Display the selected symptoms in an unordered list
+            const inventoryList = document.getElementById('inventory-items');
+            inventory.forEach(tool => {
+                const li = document.createElement('li');
+                li.textContent = tool;
+                inventoryList.appendChild(li);
+            });
+    </script>
     
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
+
 </body>
+
+
 
 </html>
