@@ -2,7 +2,7 @@ combinationCode = "16859286";
 // Saturn
 
 function combination_lock() {
-    let params = 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=400,height=680,left=530,top=150';
+    let params = 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=400,height=690,left=530,top=150';
     window.open("combination_lock.html",  "", params);
 }
 
