@@ -46,10 +46,29 @@
     </head>
 
 <body>
+    <div id="bhuiody">
 
     <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" href="side3.html"><i class="material-icons">chevron_left</i></a>
     <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" href="side1.html"><i class="material-icons">chevron_right</i></a>
 
+    <script>
+        const inventory = JSON.parse(localStorage.getItem('inventory'));
+            console.log(inventory)
+
+            const inventoryList = document.getElementById('bhuiody');
+            if(inventory.includes('screwdriver')) {
+                const img = new Image(100, 50); // width, height
+                img.src = "Images/screwdriver.png";
+                inventoryList.appendChild(img);
+                console.log("BYE");
+            }
+            if(inventory.includes('airconditioner_key')){
+                const img = new Image(200,100);
+                img.src = "Images/screwdriver.png";
+                inventoryList.appendChild(img);
+                console.log("BYE")
+            }
+    </script>
     <a href="airconditioner.html">
         <img  id="airconditioner" src = "Images\side2_airconditioner.png"/>
     </a>
