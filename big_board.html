@@ -32,25 +32,32 @@
     </head>
 
 <body>
-    <h4>Inventory:</h4>
-    <ul id="inventory-items"></ul>
+
     
     <a href="big_board_message_zoom.html">
         <img  id="words" src = "Images\big_board_message_clickable.png"/>
     </a>
     
-    <script>
-            // Retrieve the selectedSymptoms array from localStorage
+    <div id="bhuiody">
+
+        <script>
             const inventory = JSON.parse(localStorage.getItem('inventory'));
-            console.log(inventory)
-            // Display the selected symptoms in an unordered list
-            const inventoryList = document.getElementById('inventory-items');
-            inventory.forEach(tool => {
-                const li = document.createElement('li');
-                li.textContent = tool;
-                inventoryList.appendChild(li);
-            });
-    </script>
+                console.log(inventory)
+    
+                const inventoryList = document.getElementById('bhuiody');
+                if(inventory.includes('screwdriver')) {
+                    const img = new Image(100, 50); // width, height
+                    img.src = "Images/screwdriver.png";
+                    inventoryList.appendChild(img);
+                    console.log("BYE");
+                }
+                if(inventory.includes('airconditioner_key')){
+                const img = new Image(200,100);
+                img.src = "Images/screwdriver.png";
+                inventoryList.appendChild(img);
+                console.log("BYE")
+            }
+        </script>
 
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>

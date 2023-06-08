@@ -25,12 +25,17 @@
                 top: 310px;
                 cursor: default;
             }
+
+            #screwinventory {
+                left: 5px;
+                top: 5px;
+            }
             
         </style>
     </head>
 
 <body>
-    <div id="bhuiody">
+    <div id="bhuiody" id = "screwinventory">
 
     <a onclick = "appendInventory()">
         <img  id="screwdriver" src = "Images\screwdriver.png"/>
@@ -52,6 +57,12 @@
                 img.src = "Images/screwdriver.png";
                 inventoryList.appendChild(img);
                 console.log("BYE");
+            }
+            if(inventory.includes('airconditioner_key')){
+                const img = new Image(200,100);
+                img.src = "Images/screwdriver.png";
+                inventoryList.appendChild(img);
+                console.log("BYE")
             }
     </script>
     

@@ -42,18 +42,18 @@
                 top: 275px;
                 cursor: default;
             }
+
         </style>
     </head>
 
 <body>
-    <div id="bhuiody">
-
     <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" href="side2.html"><i class="material-icons">chevron_left</i></a>
     <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" href="side4.html"><i class="material-icons">chevron_right</i></a>
     
     <a href="big_board.html">
         <img  id="bigboard" src = "Images\side1_big_board.png"/>
     </a>
+    <div id="bhuiody">
 
     <script>
         const inventory = JSON.parse(localStorage.getItem('inventory'));
@@ -65,6 +65,12 @@
                 img.src = "Images/screwdriver.png";
                 inventoryList.appendChild(img);
                 console.log("BYE");
+            }
+            if(inventory.includes('airconditioner_key')){
+                const img = new Image(200,100);
+                img.src = "Images/screwdriver.png";
+                inventoryList.appendChild(img);
+                console.log("BYE")
             }
     </script>
     <a href="small_board.html">
