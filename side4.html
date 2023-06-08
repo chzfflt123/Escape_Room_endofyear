@@ -28,9 +28,23 @@
     </head>
 
 <body>
+    <div id="bhuiody">
+
     <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" href="side1.html"><i class="material-icons">chevron_left</i></a>
     <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" href="side3.html"><i class="material-icons">chevron_right</i></a>
 
+    <script>
+        const inventory = JSON.parse(localStorage.getItem('inventory'));
+            console.log(inventory)
+
+            const inventoryList = document.getElementById('bhuiody');
+            if(inventory.includes('screwdriver')) {
+                const img = new Image(100, 50); // width, height
+                img.src = "Images/screwdriver.png";
+                inventoryList.appendChild(img);
+                console.log("BYE");
+            }
+    </script>
 
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>

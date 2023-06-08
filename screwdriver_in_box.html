@@ -30,6 +30,8 @@
     </head>
 
 <body>
+    <div id="bhuiody">
+
     <a onclick = "appendInventory()">
         <img  id="screwdriver" src = "Images\screwdriver.png"/>
     </a>
@@ -41,25 +43,15 @@
             localStorage.setItem('inventory', JSON.stringify(data));
             window.location = 'empty_box.html';
         }
-    </script>
-
-    <ul id="inventory-items"></ul>
-
-    <script>
-            // Retrieve the selectedSymptoms array from localStorage
-            const inventory = JSON.parse(localStorage.getItem('inventory'));
+        const inventory = JSON.parse(localStorage.getItem('inventory'));
             console.log(inventory)
-            // Display the selected symptoms in an unordered list
-            const inventoryList = document.getElementById('inventory-items');
-            inventory.forEach(tool => {
-                const li = document.createElement('li');
-                li.textContent = tool;
-                inventoryList.appendChild(li);
-            });
-            
-            if(inventoryList.includes('screwdriver')) {
-                const Image = document.createElement('Image');
-                Image.innerHTML = "<img src=\"Images/screwdriver.jpg\"/>"
+
+            const inventoryList = document.getElementById('bhuiody');
+            if(inventory.includes('screwdriver')) {
+                const img = new Image(100, 50); // width, height
+                img.src = "Images/screwdriver.png";
+                inventoryList.appendChild(img);
+                console.log("BYE");
             }
     </script>
     
