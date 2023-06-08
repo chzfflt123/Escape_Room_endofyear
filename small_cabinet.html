@@ -16,12 +16,28 @@
                 background-image: url('images/small_cabinet.jpg');
                 background-size: cover;
             }
+
+            #numlock {
+                height: 100px;
+                width: auto;
+                position: absolute;
+                left: 925px;
+                top: 165px;
+                cursor: default;
+            }
+
         </style>
+
+        
     </head>
 
 <body>
     <h4>Inventory:</h4>
     <ul id="inventory-items"></ul>
+
+    <a onclick="combination_lock()">
+        <img  id="numlock" src = "Images\lock_number_clickable.png"/>
+    </a>
 
     <script>
             // Retrieve the selectedSymptoms array from localStorage
