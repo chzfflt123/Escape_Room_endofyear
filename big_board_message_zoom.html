@@ -13,16 +13,16 @@
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('Images/screwdriver_in_box.jpg');
+                background-image: url('Images/big_board_message_zoom.jpg');
                 background-size: cover;
             }
 
-            #screwdriver {
+            #key {
                 height: 175px;
                 width: auto;
                 position: absolute;
-                left: 344px;
-                top: 310px;
+                margin-left: 324px;
+                margin-top: 291px;
                 cursor: default;
             }
             
@@ -30,29 +30,33 @@
     </head>
 
 <body>
-    <div id="bhuiody">
-
     <a onclick = "appendInventory()">
-        <img  id="screwdriver" src = "Images\screwdriver.png"/>
+        <img  id="key" src = "Images\screwdriver.png"/>
     </a>
 
     <script>
         function appendInventory() {
             let data = [];
-            data.push('screwdriver');
+            data.push('airconditioner_key');
             localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'empty_box.html';
+            window.location = 'airconditioner_inside.html';
         }
-        const inventory = JSON.parse(localStorage.getItem('inventory'));
-            console.log(inventory)
+    </script>
 
-            const inventoryList = document.getElementById('bhuiody');
-            if(inventory.includes('screwdriver')) {
-                const img = new Image(100, 50); // width, height
-                img.src = "Images/screwdriver.png";
-                inventoryList.appendChild(img);
-                console.log("BYE");
-            }
+    <h4>Inventory:</h4>
+    <ul id="inventory-items"></ul>
+
+    <script>
+            // Retrieve the selectedSymptoms array from localStorage
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+            console.log(inventory)
+            // Display the selected symptoms in an unordered list
+            const inventoryList = document.getElementById('inventory-items');
+            inventory.forEach(tool => {
+                const li = document.createElement('li');
+                li.textContent = tool;
+                inventoryList.appendChild(li);
+            });
     </script>
     
     <!-- Keep at bottom -->
