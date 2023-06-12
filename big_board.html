@@ -25,7 +25,16 @@
                 margin-top: 185px;
                 cursor: default;
             }
-
+            .screwinventory {
+                position: absolute;
+                left: 50px;
+                top: 100px;
+            }
+            .keyinventory{
+                position: absolute;
+                left:50;
+                top:150;
+            }
         </style>
 
 
@@ -48,12 +57,14 @@
                 if(inventory.includes('screwdriver')) {
                     const img = new Image(100, 50); // width, height
                     img.src = "Images/screwdriver.png";
+                    img.className = "screwinventory";
                     inventoryList.appendChild(img);
                     console.log("BYE");
                 }
                 if(inventory.includes('airconditioner_key')){
                 const img = new Image(200,100);
                 img.src = "Images/screwdriver.png";
+                img.className = "keyinventory";
                 inventoryList.appendChild(img);
                 console.log("BYE")
             }
