@@ -19,14 +19,15 @@
                 background-size: cover;
             }
 
-            #inventory {
-                height: 750px;
+            #airconditionercover {
+                height: 555px;
                 width: auto;
                 position: absolute;
-                left: 350px;
-                top: 50px;
+                left: 280px;
+                top: 80px;
                 cursor: default;
             }
+
         </style>
         
     </head>
@@ -52,6 +53,20 @@
                 img.src = "Images/screwdriver.png";
                 inventoryList.appendChild(img);
                 console.log("BYE")
+            }
+
+        </script>
+
+        <a onclick="hasitem()">
+            <img  id="airconditionercover" src = "Images\airconditioner_toopen_clickable.png"/>
+        </a>    
+
+        <script>
+            function hasitem(){
+                const inventory = JSON.parse(localStorage.getItem('inventory'));
+                if(inventory.includes('screwdriver')){
+                    window.location="airconditioner_inside.html"
+                }
             }
         </script>
     <!-- Keep at bottom -->
