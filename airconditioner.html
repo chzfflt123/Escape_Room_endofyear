@@ -17,20 +17,22 @@
             body {
                 background-image: url('Images/airconditioner.jpg');
                 background-size: cover;
+                background-repeat:no-repeat;
+                min-height:840px;
             }
 
             #airconditionercover {
-                height: 555px;
+                height: 575px;
                 width: auto;
                 position: absolute;
-                left: 280px;
-                top: 80px;
+                left: 288px;
+                top: 83px;
                 cursor: default;
             }
             .screwinventory {
                 position: absolute;
                 left: 50px;
-                top: 100px;
+                top: 72px;
             }
             .keyinventory{
                 position: absolute;
@@ -53,7 +55,7 @@
     
                 const inventoryList = document.getElementById('bhuiody');
                 if(inventory.includes('screwdriver')) {
-                    const img = new Image(100, 50); // width, height
+                    const img = new Image(90, 40); // width, height
                     img.src = "Images/screwdriver.png";
                     img.className = "screwinventory";
                     inventoryList.appendChild(img);
