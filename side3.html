@@ -98,9 +98,27 @@
     </a>
 
     
-    <a href="screwdriver_in_box.html">
+    <a onclick="sidetable()">
         <img  id="sidetable" src = "Images\side3_side_table.png"/>
     </a>
+
+    <script>
+        function sidetable(){
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+
+            const inventoryList = document.getElementById('bhuiody');
+            if (inventory == null) {
+                window.location = "screwdriver_in_box.html";
+            }
+            else if(inventory.includes('screwdriver')) {
+                window.location = "empty_box.html";
+            }  
+            else {
+                window.location = "screwdriver_in_box.html";
+            }
+        }
+        
+    </script>
 
     <a href="plants.html">
         <img  id="plants" src = "Images\side3_plants.png"/>
