@@ -24,11 +24,11 @@
             }
 
             #key {
-                height: 175px;
+                height: 72px;
                 width: auto;
                 position: absolute;
-                margin-left: 324px;
-                margin-top: 291px;
+                margin-left: 552px;
+                margin-top: 312px;
                 cursor: default;
             }
             .screwinventory {
@@ -38,8 +38,8 @@
             }
             .keyinventory{
                 position: absolute;
-                left:50;
-                top:150;
+                left:43px;
+                top:163px;
             }
             .material-symbols-outlined {
               font-variation-settings:
@@ -54,7 +54,7 @@
 
 <body>
     <a onclick = "appendInventory()">
-        <img  id="key" src = "Images\plant_justkey.png"/>
+        <img  id="key" src = "Images/plant_justkey.png"/>
     </a>
     <a href="plants.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
@@ -86,8 +86,8 @@
                     console.log("BYE");
                 }
                 if(inventory.includes('airconditioner_key')){
-                    const img = new Image(200,100);
-                    img.src = "Images/screwdriver.png";
+                    const img = new Image(95,85);
+                    img.src = "Images/airconditioner_keyicon.png";
                     img.className = "keyinventory";
                     inventoryList.appendChild(img);
                     console.log("BYE")
