@@ -15,7 +15,7 @@
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('Images/blue_cabinet_zoom.jpg');
+                background-image: url('Images/blue_cabinet_poster.jpg');
                 background-size: cover;
                 background-repeat:no-repeat;
                 min-height:840px;
@@ -28,6 +28,13 @@
                 left: 342px;
                 top: 300px;
                 cursor: default;
+            }
+
+            .modal-trigger{
+                position:absolute;
+                left:200px;
+                top:100px;
+                width:200px;
             }
             .screwinventory {
                 position: absolute;
@@ -52,8 +59,8 @@
 
 <body>
     <div id="bhuiody">
-
-        <img class= "modal-trigger" src = "Images\blue_cabinet_justposter.jpg" href="#periodictable"/>
+        
+        <img id= "modal-trigger" src = "Images\blue_cabinet_justposter.png" href="#periodictable"/>
         
         <!-- Modal Structure -->
         <div id="periodictable" class="modal">

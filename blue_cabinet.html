@@ -15,11 +15,16 @@
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('Images/blue_cabinet.jpg');
+                background-image: url('Images/blue_cabinet_poster.jpg');
                 background-size: cover;
-                max-height:840px;
-                max-width:auto;
+                min-height:840px;
                 background-repeat:no-repeat;
+            }
+            #cabinet_poster {
+                height:340px;
+                position:absolute;
+                left:300px;
+                top:150px;
             }
 
             #screwdriver {
@@ -53,8 +58,10 @@
 
 <body>
     <div id="bhuiody">
-
-        <img src = "Images\blue_cabinet_poster.jpg" href="blue_cabinet_poster.html"/>
+        <!-- This is at a different angle from the original bg; either we need more editing or we just make them automatically
+        go to this image -->
+        <!-- <img id="cabinet_poster" src = "Images\blue_cabinet_poster.jpg" href="blue_cabinet_poster.html"/> -->
+        
 
         <a href="side3.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
