@@ -21,34 +21,6 @@
                 min-height:840px;
             }
 
-            #words {
-                height: 171px;
-                width: auto;
-                position: absolute;
-                margin-left: 112px;
-                margin-top: 260px;
-                cursor: default;
-            }
-            .screwinventory {
-                position: absolute;
-                left: 50px;
-                top: 72px;
-            }
-            .keyinventory{
-                position: absolute;
-                left:43px;
-                top:163px;
-            }
-        </style>
-        <style>
-            .material-symbols-outlined {
-              font-variation-settings:
-              'FILL' 0,
-              'wght' 400,
-              'GRAD' 0,
-              'opsz' 48
-            }
-            
         </style>
 
 
@@ -62,8 +34,9 @@
     <a href="side1.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
     
-    <script>
-            // Retrieve the selectedSymptoms array from localStorage
+    <div id="bhuiody">
+
+        <script>
             const inventory = JSON.parse(localStorage.getItem('inventory'));
                 console.log(inventory)
     
@@ -76,12 +49,12 @@
                     console.log("BYE");
                 }
                 if(inventory.includes('airconditioner_key')){
-                const img = new Image(95,85);
-                img.src = "Images/airconditioner_keyicon.png";
-                img.className = "keyinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE")
-            }
+                    const img = new Image(200,100);
+                    img.src = "Images/airconditioner.png";
+                    img.className = "keyinventory";
+                    inventoryList.appendChild(img);
+                    console.log("BYE")
+                }
         </script>
 
     <!-- Keep at bottom -->

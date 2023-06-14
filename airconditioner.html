@@ -21,25 +21,6 @@
                 min-height:840px;
             }
 
-            #airconditionercover {
-                height: 575px;
-                width: auto;
-                position: absolute;
-                left: 288px;
-                top: 83px;
-                cursor: default;
-            }
-            .screwinventory {
-                position: absolute;
-                left: 50px;
-                top: 72px;
-            }
-            .keyinventory{
-                position: absolute;
-                left:43px;
-                top:163px;
-            }
-
         </style>
         
     </head>
@@ -62,15 +43,15 @@
                     console.log("BYE");
                 }
                 if(inventory.includes('airconditioner_key')){
-                const img = new Image(95,85);
-                img.src = "Images/airconditioner_keyicon.png";
-                img.className = "keyinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE")
-            }
-
+                    const img = new Image(200,100);
+                    img.src = "Images/airconditioner.png";
+                    img.className = "keyinventory";
+                    inventoryList.appendChild(img);
+                    console.log("BYE")
+                }
         </script>
 
+        
         <a onclick="hasitem()">
             <img  id="airconditionercover" src = "Images\airconditioner_toopen_clickable.png"/>
         </a>    

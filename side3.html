@@ -67,36 +67,52 @@
     </head>
 
 <body>
-    <div id="bhuiody">
-
-    <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" href="side4.html"><i class="material-icons">chevron_left</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" onclick=checkside4()><i class="material-icons">chevron_left</i></a>
     <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" href="side2.html"><i class="material-icons">chevron_right</i></a>
 
     <script>
-        const inventory = JSON.parse(localStorage.getItem('inventory'));
-            console.log(inventory)
+        function checkside4(){
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
 
-            const inventoryList = document.getElementById('bhuiody');
-            if(inventory.includes('screwdriver')) {
-                const img = new Image(90, 40); // width, height
-                img.src = "Images/screwdriver.png";
-                img.className = "screwinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE");
+            const inventoryList = document.getElementById('charger');
+            if (inventory.includes('charger')==false) {
+                window.location = "side4.html";
             }
-            if(inventory.includes('airconditioner_key')){
-                const img = new Image(95,85);
-                img.src = "Images/airconditioner_keyicon.png";
-                img.className = "keyinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE")
+            else if(inventory.includes('charger')) {
+                window.location = "side4_nocharger.html";
+            }  
+            else {
+                window.location = "side4.html";
             }
+        }
     </script>
+
+    <div id="bhuiody">
+
+        <script>
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+                console.log(inventory)
+    
+                const inventoryList = document.getElementById('bhuiody');
+                if(inventory.includes('screwdriver')) {
+                    const img = new Image(90, 40); // width, height
+                    img.src = "Images/screwdriver.png";
+                    img.className = "screwinventory";
+                    inventoryList.appendChild(img);
+                    console.log("BYE");
+                }
+                if(inventory.includes('airconditioner_key')){
+                    const img = new Image(200,100);
+                    img.src = "Images/airconditioner.png";
+                    img.className = "keyinventory";
+                    inventoryList.appendChild(img);
+                    console.log("BYE")
+                }
+        </script>
     <!-- need to take pic of closed big cabinet -->
     <a href="blue_cabinet_poster.html">
         <img  id="bigcabinet" src = "Images\side3_big_cabinet.png"/>
     </a>
-
     
     <a onclick="sidetable()">
         <img  id="sidetable" src = "Images\side3_side_table.png"/>

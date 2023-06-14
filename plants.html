@@ -59,9 +59,6 @@
     <a href="side3.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
 
-    <h4>Inventory:</h4>
-    <ul id="inventory-items"></ul>
-
     <div id="bhuiody">
 
         <script>
@@ -77,12 +74,12 @@
                     console.log("BYE");
                 }
                 if(inventory.includes('airconditioner_key')){
-                const img = new Image(95,85);
-                img.src = "Images/airconditioner_keyicon.png";
-                img.className = "keyinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE")
-            }
+                    const img = new Image(200,100);
+                    img.src = "Images/airconditioner.png";
+                    img.className = "keyinventory";
+                    inventoryList.appendChild(img);
+                    console.log("BYE")
+                }
         </script>
     
     <!-- Keep at bottom -->

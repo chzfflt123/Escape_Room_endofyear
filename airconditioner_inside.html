@@ -21,16 +21,6 @@
                 min-height:840px;
             }
 
-            .screwinventory {
-                position: absolute;
-                left: 50px;
-                top: 72px;
-            }
-            .keyinventory{
-                position: absolute;
-                left:43px;
-                top:163px;
-            }
         </style>
     </head>
 
@@ -52,13 +42,12 @@
                     console.log("BYE");
                 }
                 if(inventory.includes('airconditioner_key')){
-                const img = new Image(95,85);
-                img.src = "Images/airconditioner_keyicon.png";
-                img.className = "keyinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE")
-            }
-            
+                    const img = new Image(200,100);
+                    img.src = "Images/airconditioner.png";
+                    img.className = "keyinventory";
+                    inventoryList.appendChild(img);
+                    console.log("BYE")
+                }
         </script>
 
     <!-- Keep at bottom -->

@@ -15,11 +15,22 @@
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('images/empty_box.jpg');
+                background-image: url('images/side4_nocharger.jpg');
                 background-size: cover;
                 background-repeat:no-repeat;
                 min-height:840px;
             }
+            
+            #left{
+                position: absolute;
+                left:10px;
+                top: 392px;
+            }
+            #right{
+                left:1340px;
+                top:392px;
+            }
+            
             .screwinventory {
                 position: absolute;
                 left: 50px;
@@ -27,8 +38,8 @@
             }
             .keyinventory{
                 position: absolute;
-                left:43px;
-                top:163px;
+                left:50;
+                top:150;
             }
             .material-symbols-outlined {
               font-variation-settings:
@@ -42,31 +53,20 @@
     </head>
 
 <body>
-        <a href="side3.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
+    <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" href="side1.html"><i class="material-icons">chevron_left</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" href="side3.html"><i class="material-icons">chevron_right</i></a>
 
-<<<<<<< HEAD
-        <script>
-            const inventory = JSON.parse(localStorage.getItem('inventory'));
-                console.log(inventory)
+    <img  id="phone" src = "Images\side4_phone.png" onclick = "hasitem()"/>
     
-                const inventoryList = document.getElementById('bhuiody');
-                if(inventory.includes('screwdriver')) {
-                    const img = new Image(90, 40); // width, height
-                    img.src = "Images/screwdriver.png";
-                    img.className = "screwinventory";
-                    inventoryList.appendChild(img);
-                    console.log("BYE");
-                }
-                if(inventory.includes('airconditioner_key')){
-                    const img = new Image(95,85);
-                    img.src = "Images/airconditioner_keyicon.png";
-                    img.className= "keyinventory"
-                    inventoryList.appendChild(img);
-                    console.log("BYE")
-                }
-                
-        </script>
-=======
+    <script>
+        function hasitem(){
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+            if(inventory.includes('charger')){
+                window.location="charging_phone.html"
+            }
+        }
+    </script>
+
         <div id="bhuiody">
 
             <script>
@@ -89,7 +89,6 @@
                         console.log("BYE")
                     }
             </script>
->>>>>>> 693b3bb5c77f848a4a1dea4a52c941dc61d8e6e5
 
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>

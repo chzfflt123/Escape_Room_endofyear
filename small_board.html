@@ -45,27 +45,27 @@
     <a href="side1.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
     <div id="bhuiody">
-    <script>
-        const inventory = JSON.parse(localStorage.getItem('inventory'));
-            console.log(inventory)
 
-            const inventoryList = document.getElementById('bhuiody');
-            if(inventory.includes('screwdriver')) {
-                const img = new Image(90, 40); // width, height
-                img.src = "Images/screwdriver.png";
-                img.className = "screwinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE");
-            }
-            if(inventory.includes('airconditioner_key')){
-                const img = new Image(95,85);
-                img.src = "Images/airconditioner_keyicon.png";
-                img.className = "keyinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE")
-            }
-    </script>
-
+        <script>
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+                console.log(inventory)
+    
+                const inventoryList = document.getElementById('bhuiody');
+                if(inventory.includes('screwdriver')) {
+                    const img = new Image(90, 40); // width, height
+                    img.src = "Images/screwdriver.png";
+                    img.className = "screwinventory";
+                    inventoryList.appendChild(img);
+                    console.log("BYE");
+                }
+                if(inventory.includes('airconditioner_key')){
+                    const img = new Image(200,100);
+                    img.src = "Images/airconditioner.png";
+                    img.className = "keyinventory";
+                    inventoryList.appendChild(img);
+                    console.log("BYE")
+                }
+        </script>
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
 </body>
