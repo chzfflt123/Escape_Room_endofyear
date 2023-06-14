@@ -66,14 +66,19 @@
 
     <img  id="charger" src = "Images\side4_charger.png" onclick = "appendInventory()"/>
 
-    <img  id="charger" src = "Images\side4_charger.png" onclick = "hasitem()"/>
-
     <script>
         function hasitem(){
             const inventory = JSON.parse(localStorage.getItem('inventory'));
             if(inventory.includes('charger')){
                 window.location="charging_phone.html"
             }
+        }
+        function appendInventory() {
+            let data = [];
+            data.push('charger');
+            localStorage.setItem('inventory', JSON.stringify(data));
+            window.location = 'side4_nocharger.html';
+            console.log("inside append inventory")
         }
     </script>
     <script>
@@ -92,6 +97,13 @@
                 const img = new Image(200,100);
                 img.src = "Images/airconditioner.png";
                 img.className = "keyinventory";
+                inventoryList.appendChild(img);
+                console.log("BYE")
+            }
+            if(inventory.includes('charger')){
+                const img = new Image(200,100);
+                img.src = "Images/side4_charger.png";
+                img.className = "chargerinventory";
                 inventoryList.appendChild(img);
                 console.log("BYE")
             }
