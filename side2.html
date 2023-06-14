@@ -19,6 +19,7 @@
                 min-height:840px;
             }
             #left{
+                position: absolute;
                 left:10px;
                 top: 392px;
             }
@@ -61,8 +62,8 @@
             }
             .keyinventory{
                 position: absolute;
-                left:50;
-                top:150;
+                left:43px;
+                top:163px;
             }
         </style>
     </head>
@@ -86,8 +87,8 @@
                 console.log("BYE");
             }
             if(inventory.includes('airconditioner_key')){
-                const img = new Image(200,100);
-                img.src = "Images/screwdriver.png";
+                const img = new Image(95,85);
+                img.src = "Images/airconditioner_keyicon.png";
                 img.className = "keyinventory";
                 inventoryList.appendChild(img);
                 console.log("BYE")
