@@ -29,6 +29,13 @@
                 top: 300px;
                 cursor: default;
             }
+
+            .modal-trigger{
+                position:absolute;
+                left:200px;
+                top:100px;
+                width:200px;
+            }
             .screwinventory {
                 position: absolute;
                 left: 50px;
@@ -52,8 +59,10 @@
 
 <body>
     <div id="bhuiody">
-
-        <img class= "modal-trigger" src = "Images\blue_cabinet_justposter.png" href="#periodictable"/>
+        <a onclick="periodicTable()">
+            <img  id="bigcabinet" src = "Images\side3_big_cabinet.png"/>
+        </a>
+        <img id= "modal-trigger" src = "Images\blue_cabinet_justposter.png" href="#periodictable"/>
         
         <!-- Modal Structure -->
         <div id="periodictable" class="modal">
