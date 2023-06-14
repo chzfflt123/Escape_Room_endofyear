@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="/public/stylesheets/stylesheet1.css">
+        <link href="htmlstyle.css" rel="stylesheet" type="text/css"/>
         <title>Escape Room</title>
         <style>
             body {
@@ -67,7 +68,7 @@
     </head>
 
 <body>
-    <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" onclick=checkside4()><i class="material-icons">chevron_left</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" onclick="checkside4()"><i class="material-icons">chevron_left</i></a>
     <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" href="side2.html"><i class="material-icons">chevron_right</i></a>
 
     <script>
@@ -75,14 +76,22 @@
             const inventory = JSON.parse(localStorage.getItem('inventory'));
 
             const inventoryList = document.getElementById('charger');
+            console.log(inventory);
+            if (inventory == null) {
+                window.location = "side4.html";
+                console.log("1");
+            }
             if (inventory.includes('charger')==false) {
                 window.location = "side4.html";
+                console.log("2");
             }
             else if(inventory.includes('charger')) {
                 window.location = "side4_nocharger.html";
+                console.log("3");
             }  
             else {
                 window.location = "side4.html";
+                console.log("4");
             }
         }
     </script>
@@ -102,8 +111,8 @@
                     console.log("BYE");
                 }
                 if(inventory.includes('airconditioner_key')){
-                    const img = new Image(200,100);
-                    img.src = "Images/airconditioner.png";
+                    const img = new Image(90,85);
+                    img.src = "Images/airconditioner_keyicon.png";
                     img.className = "keyinventory";
                     inventoryList.appendChild(img);
                     console.log("BYE")

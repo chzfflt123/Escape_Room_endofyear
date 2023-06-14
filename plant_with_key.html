@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="htmlstyle.css" rel="stylesheet" type="text/css"/>
         <title>Escape Room</title>
         <style>
             body {
@@ -54,8 +55,9 @@
 
 <body>
     <a onclick = "appendInventory()">
-        <img  id="key" src = "Images/plant_justkey.png"/>
+        <img  id="plant_key" src = "Images/plant_justkey.png"/>
     </a>
+
     <a href="plants.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
 
@@ -83,8 +85,8 @@
                 console.log("BYE");
             }
             if(inventory.includes('airconditioner_key')){
-                const img = new Image(200,100);
-                img.src = "Images/airconditioner.png";
+                const img = new Image(90,85);
+                img.src = "Images/airconditioner_keyicon.png";
                 img.className = "keyinventory";
                 inventoryList.appendChild(img);
                 console.log("BYE")

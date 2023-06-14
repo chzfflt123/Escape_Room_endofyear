@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="/public/stylesheets/stylesheet1.css">
+        <link href="htmlstyle.css" rel="stylesheet" type="text/css"/>
         <title>Escape Room</title>
         <style>
             body {
@@ -28,11 +29,11 @@
             }
 
             #charger {
-                height: 75px;
+                height: 70px;
                 width: auto;
                 position: absolute;
-                left: 908px;
-                top: 410px;
+                left: 1020px;
+                top: 639px;
                 cursor: default;
             }
 
@@ -41,7 +42,7 @@
                 width: auto;
                 position: absolute;
                 left: 160px;
-                top: 524px;
+                top: 624px;
                 cursor: default;
             }
 
@@ -94,8 +95,8 @@
                 console.log("BYE");
             }
             if(inventory.includes('airconditioner_key')){
-                const img = new Image(200,100);
-                img.src = "Images/airconditioner.png";
+                const img = new Image(90,85);
+                img.src = "Images/airconditioner_keyicon.png";
                 img.className = "keyinventory";
                 inventoryList.appendChild(img);
                 console.log("BYE")

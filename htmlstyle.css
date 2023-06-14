@@ -15,12 +15,18 @@
 }
 
 #key {
-    height: 114px;
+    height: 115px;
     width: auto;
     position: absolute;
     left: 374px;
-    top: 446px;
-    cursor: default;
+    top: 445px;
+}
+
+#plant_key {
+    height: 70px;
+    position: absolute;
+    top: 314px;
+    left: 552px;
 }
 
 #thecabinet {
@@ -35,8 +41,8 @@
 }
 .keyinventory{
     position: absolute;
-    left:50;
-    top:150;
+    left: 43px;
+    top: 163px;
 }
 
 .material-symbols-outlined {
