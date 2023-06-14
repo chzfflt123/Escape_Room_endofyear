@@ -26,6 +26,25 @@
                 left:1340px;
                 top:392px;
             }
+
+            #charger {
+                height: 75px;
+                width: auto;
+                position: absolute;
+                left: 908px;
+                top: 410px;
+                cursor: default;
+            }
+
+            #phone {
+                height: 43px;
+                width: auto;
+                position: absolute;
+                left: 160px;
+                top: 524px;
+                cursor: default;
+            }
+
             .screwinventory {
                 position: absolute;
                 left: 50px;
@@ -64,6 +83,28 @@
                 inventoryList.appendChild(img);
                 console.log("BYE")
             }
+            if(inventory.includes('charger')){
+                const img = new Image(200,100);
+                img.src = "Images/screwdriver.png";
+                img.className = "chargerinventory";
+                inventoryList.appendChild(img);
+                console.log("BYE")
+            }
+    </script>
+
+    <img  id="charger" src = "Images\side4_charger.png" onclick = "appendInventory()"/>
+
+    <a onclick="hasitem()">
+        <img  id="phone" src = "Images\side4_phone.png"/>
+    </a>    
+
+    <script>
+        function hasitem(){
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+            if(inventory.includes('charger')){
+                window.location="charging_phone.html"
+            }
+        }
     </script>
 
     <!-- Keep at bottom -->
