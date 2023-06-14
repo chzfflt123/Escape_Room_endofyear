@@ -26,6 +26,25 @@
                 left:1340px;
                 top:392px;
             }
+
+            #charger {
+                height: 75px;
+                width: auto;
+                position: absolute;
+                left: 908px;
+                top: 410px;
+                cursor: default;
+            }
+
+            #phone {
+                height: 43px;
+                width: auto;
+                position: absolute;
+                left: 160px;
+                top: 524px;
+                cursor: default;
+            }
+
             .screwinventory {
                 position: absolute;
                 left: 50px;
@@ -45,26 +64,50 @@
 
     <div id="bhuiody">
 
-        <script>
+    <img  id="charger" src = "Images\side4_charger.png" onclick = "appendInventory()"/>
+
+    <script>
+        function hasitem(){
             const inventory = JSON.parse(localStorage.getItem('inventory'));
-                console.log(inventory)
-    
-                const inventoryList = document.getElementById('bhuiody');
-                if(inventory.includes('screwdriver')) {
-                    const img = new Image(90, 40); // width, height
-                    img.src = "Images/screwdriver.png";
-                    img.className = "screwinventory";
-                    inventoryList.appendChild(img);
-                    console.log("BYE");
-                }
-                if(inventory.includes('airconditioner_key')){
-                    const img = new Image(200,100);
-                    img.src = "Images/airconditioner.png";
-                    img.className = "keyinventory";
-                    inventoryList.appendChild(img);
-                    console.log("BYE")
-                }
-        </script>
+            if(inventory.includes('charger')){
+                window.location="charging_phone.html"
+            }
+        }
+        function appendInventory() {
+            let data = [];
+            data.push('charger');
+            localStorage.setItem('inventory', JSON.stringify(data));
+            window.location = 'side4_nocharger.html';
+            console.log("inside append inventory")
+        }
+    </script>
+    <script>
+        const inventory = JSON.parse(localStorage.getItem('inventory'));
+            console.log(inventory)
+
+            const inventoryList = document.getElementById('bhuiody');
+            if(inventory.includes('screwdriver')) {
+                const img = new Image(90, 40); // width, height
+                img.src = "Images/screwdriver.png";
+                img.className = "screwinventory";
+                inventoryList.appendChild(img);
+                console.log("BYE");
+            }
+            if(inventory.includes('airconditioner_key')){
+                const img = new Image(200,100);
+                img.src = "Images/airconditioner.png";
+                img.className = "keyinventory";
+                inventoryList.appendChild(img);
+                console.log("BYE")
+            }
+            if(inventory.includes('charger')){
+                const img = new Image(200,100);
+                img.src = "Images/side4_charger.png";
+                img.className = "chargerinventory";
+                inventoryList.appendChild(img);
+                console.log("BYE")
+            }
+    </script>
 
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>

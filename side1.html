@@ -59,8 +59,26 @@
 
 <body>
     <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" href="side2.html"><i class="material-icons">chevron_left</i></a>
-    <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" href="side4.html"><i class="material-icons">chevron_right</i></a>
     
+    <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" onclick=checkside4()><i class="material-icons">chevron_right</i></a>
+    
+    <script>
+        function checkside4(){
+            const inventory = JSON.parse(localStorage.getItem('inventory'));
+
+            const inventoryList = document.getElementById('charger');
+            if (inventory.includes('charger')==false) {
+                window.location = "side4.html";
+            }
+            else if(inventory.includes('charger')) {
+                window.location = "side4_nocharger.html";
+            }  
+            else {
+                window.location = "side4.html";
+            }
+        }
+    </script>
+
     <a href="big_board.html">
         <img  id="bigboard" src = "Images\side1_big_board.png"/>
     </a>
