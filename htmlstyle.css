@@ -64,3 +64,163 @@
     margin-top: 260px;
     cursor: default;
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+    
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+    /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-trigger{
+    position:absolute;
+    left:200px;
+    top:100px;
+    width:200px;
+}
+
+#plant {
+    height: 195px;
+    width: auto;
+    position: absolute;
+    margin-left: 528px;
+    margin-top: 443px;
+    cursor: default;
+}
+
+#chargerkey {
+    height: 185px;
+    width: auto;
+    position: absolute;
+    left: 670px;
+    top: 460px;
+    cursor: default;
+}
+
+#left{
+    left:10px;
+    top: 392px;
+}
+#right{
+    left:1340px;
+    top:392px;
+}
+
+#bigboard {
+    height: 305px;
+    width: auto;
+    position: absolute;
+    left: 372px;
+    top: 240px;
+    cursor: default;
+}
+
+#smallboard {
+    height: 192px;
+    width: auto;
+    position: absolute;
+    left: 1125px;
+    top: 287px;
+    cursor: default;
+}
+
+#pulldowncharger {
+    height: 287px;
+    width: auto;
+    position: absolute;
+    left: 672px;
+    top: 1px;
+    cursor: default;
+}
+
+#airconditioner {
+    height: 79px;
+    width: 107px;
+    position: absolute;
+    left: 718px;
+    top: 377px;
+    cursor: default;
+}
+
+#smallcabinet {
+    height: 150px;
+    width: auto;
+    position: absolute;
+    left: 1257px;
+    top: 517px;
+    cursor: default;
+}
+
+#sidetable {
+    height: 43px;
+    width: auto;
+    position: absolute;
+    left: 160px;
+    top: 524px;
+    cursor: default;
+}
+
+#bigcabinet {
+    height: 304px;
+    width: auto;
+    position: absolute;
+    left: 307px;
+    top: 379px;
+    cursor: default;
+}
+
+#charger {
+    height: 75px;
+    width: auto;
+    position: absolute;
+    left: 908px;
+    top: 410px;
+    cursor: default;
+}
+
+#phone {
+    height: 43px;
+    width: auto;
+    position: absolute;
+    left: 160px;
+    top: 524px;
+    cursor: default;
+}
+
+#numlock {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    left: 958px;
+    top: 172px;
+    cursor: default;
+}
