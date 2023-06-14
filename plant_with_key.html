@@ -68,31 +68,28 @@
         }
     </script>
 
-    <h4>Inventory:</h4>
-    <ul id="inventory-items"></ul>
+<div id="bhuiody">
 
-    <div id="bhuiody">
+    <script>
+        const inventory = JSON.parse(localStorage.getItem('inventory'));
+            console.log(inventory)
 
-        <script>
-            const inventory = JSON.parse(localStorage.getItem('inventory'));
-                console.log(inventory)
-    
-                const inventoryList = document.getElementById('bhuiody');
-                if(inventory.includes('screwdriver')) {
-                    const img = new Image(90, 40); // width, height
-                    img.src = "Images/screwdriver.png";
-                    img.className = "screwinventory";
-                    inventoryList.appendChild(img);
-                    console.log("BYE");
-                }
-                if(inventory.includes('airconditioner_key')){
-                    const img = new Image(200,100);
-                    img.src = "Images/screwdriver.png";
-                    img.className = "keyinventory";
-                    inventoryList.appendChild(img);
-                    console.log("BYE")
+            const inventoryList = document.getElementById('bhuiody');
+            if(inventory.includes('screwdriver')) {
+                const img = new Image(90, 40); // width, height
+                img.src = "Images/screwdriver.png";
+                img.className = "screwinventory";
+                inventoryList.appendChild(img);
+                console.log("BYE");
             }
-        </script>
+            if(inventory.includes('airconditioner_key')){
+                const img = new Image(200,100);
+                img.src = "Images/airconditioner.png";
+                img.className = "keyinventory";
+                inventoryList.appendChild(img);
+                console.log("BYE")
+            }
+    </script>
     
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>

@@ -66,6 +66,7 @@
             window.location = 'pulleddowncharger_nokey.html';
             console.log("inside append inventory")
         }
+        
         const inventory = JSON.parse(localStorage.getItem('inventory'));
         console.log(inventory)
 
@@ -79,7 +80,8 @@
         }
         if(inventory.includes('airconditioner_key')){
             const img = new Image(200,100);
-            img.src = "Images/screwdriver.png";
+            img.src = "Images/airconditioner.png";
+            img.className = "keyinventory";
             inventoryList.appendChild(img);
             console.log("BYE")
         }
