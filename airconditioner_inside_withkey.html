@@ -20,11 +20,11 @@
             }
 
             #key {
-                height: 175px;
+                height: 114px;
                 width: auto;
                 position: absolute;
-                margin-left: 324px;
-                margin-top: 291px;
+                left: 374px;
+                top: 446px;
                 cursor: default;
             }
             .screwinventory {
@@ -42,7 +42,7 @@
 
 <body>
     <a onclick = "appendInventory()">
-        <img  id="key" src = "Images\screwdriver.png"/>
+        <img  id="key" src = "Images/airconditioner_key.png"/>
     </a>
 
     <script>
@@ -70,7 +70,7 @@
             }
             if(inventory.includes('airconditioner_key')){
                 const img = new Image(200,100);
-                img.src = "Images/screwdriver.png";
+                img.src = "Images/airconditioner.png";
                 img.className = "keyinventory";
                 inventoryList.appendChild(img);
                 console.log("BYE")
