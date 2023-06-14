@@ -22,6 +22,15 @@
     top: 445px;
 }
 
+#charger {
+    height: 70px;
+    width: auto;
+    position: absolute;
+    left: 1020px;
+    top: 639px;
+    cursor: default;
+}
+
 #plant_key {
     height: 70px;
     position: absolute;
@@ -204,21 +213,12 @@
     cursor: default;
 }
 
-#charger {
-    height: 75px;
-    width: auto;
-    position: absolute;
-    left: 908px;
-    top: 410px;
-    cursor: default;
-}
-
 #phone {
     height: 43px;
     width: auto;
     position: absolute;
-    left: 160px;
-    top: 524px;
+    left: 458px;
+    top: 684px;
     cursor: default;
 }
 
