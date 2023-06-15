@@ -41,25 +41,9 @@
             window.location = 'pulleddowncharger_nokey.html';
             console.log("inside append inventory")
         }
-        
-        const inventory = JSON.parse(localStorage.getItem('inventory'));
-        console.log(inventory)
-
-        const inventoryList = document.getElementById('bhuiody');
-        if(inventory.includes('screwdriver')) {
-            const img = new Image(90, 40); // width, height
-            img.src = "Images/screwdriver.png";
-            img.className = "screwinventory";
-            inventoryList.appendChild(img);
-            console.log("BYE");
-        }
-        if(inventory.includes('airconditioner_key')){
-            const img = new Image(90,85);
-            img.src = "Images/airconditioner_keyicon.png";
-            inventoryList.appendChild(img);
-            console.log("BYE")
-        }
     </script>
+    <script src="general_script.js"></script>
+
     
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
