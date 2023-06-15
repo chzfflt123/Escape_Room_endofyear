@@ -43,6 +43,14 @@
     width: auto;
 }
 
+#plants {
+    position: absolute;
+    height: 74px;
+    width: auto;
+    left: 909px;
+    top: 411px;
+}
+
 .screwinventory {
     position: absolute;
     left: 50px;
