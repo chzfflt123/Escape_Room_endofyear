@@ -36,6 +36,14 @@ function appendInventory_charger_key() {
     console.log("inside append inventory")
 }
 
+function appendInventory_thirddrawer_key() {
+    let data = [];
+    data.push('thirddrawer_key');
+    localStorage.setItem('inventory', JSON.stringify(data));
+    window.location = 'small_cabinet.html';
+    console.log("inside append inventory")
+}
+
 function hasitem_screwdriver(){
     const inventory = JSON.parse(localStorage.getItem('inventory'));
     if(inventory.includes('screwdriver')){
@@ -47,6 +55,13 @@ function hasitem_charger(){
     const inventory = JSON.parse(localStorage.getItem('inventory'));
     if(inventory.includes('charger')){
         window.location="charging_phone.html"
+    }
+}
+
+function hasitem_airconditioner_key(){
+    const inventory = JSON.parse(localStorage.getItem('inventory'));
+    if(inventory.includes('airconditioner_key')){
+        window.location="small_cabinet_third_drawer.html"
     }
 }
 
