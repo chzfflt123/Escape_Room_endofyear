@@ -40,7 +40,7 @@ function appendInventory_thirddrawer_key() {
     let data = [];
     data.push('thirddrawer_key');
     localStorage.setItem('inventory', JSON.stringify(data));
-    window.location = 'small_cabinet.html';
+    window.location = 'small_cabinet_third_drawer.html';
     console.log("inside append inventory")
 }
 
@@ -58,11 +58,15 @@ function hasitem_charger(){
     }
 }
 
-function hasitem_airconditioner_key(){
+function hasitem_thirddrawer_key(){
     const inventory = JSON.parse(localStorage.getItem('inventory'));
-    if(inventory.includes('airconditioner_key')){
+    if(inventory.includes('thirddrawer_key')){
         window.location="small_cabinet_third_drawer.html"
     }
+    else if (inventory.includes('airconditioner_key')){
+        window.location="small_cabinet_third_drawer_withkey.html"
+    }
+    else window.location="small_cabinet.html"
 }
 
 function printImages(){
