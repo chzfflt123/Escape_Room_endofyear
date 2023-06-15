@@ -162,6 +162,12 @@
     cursor: default;
 }
 
+.chargerinventory {
+    position: absolute;
+    left:40px;
+    top:300px;
+}
+
 #left{
     left:10px;
     top: 392px;

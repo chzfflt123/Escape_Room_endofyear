@@ -28,15 +28,6 @@
                 top:392px;
             }
 
-            #charger {
-                height: 75px;
-                width: auto;
-                position: absolute;
-                left: 908px;
-                top: 410px;
-                cursor: default;
-            }
-
             .screwinventory {
                 position: absolute;
                 left: 50px;
@@ -56,7 +47,7 @@
 
     <div id="bhuiody">
 
-    <img  id="charger" src = "Images/side4_charger.png" onclick = "appendInventory()"/>
+    <img  id="charger" src = "Images/side4_charger.png" onclick = "appendInventory_Charger()"/>
 
     <script>
         function hasitem(){
@@ -64,13 +55,6 @@
             if(inventory.includes('charger')){
                 window.location="charging_phone.html"
             }
-        }
-        function appendInventory() {
-            let data = [];
-            data.push('charger');
-            localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'side4_nocharger.html';
-            console.log("inside append inventory")
         }
     </script>
 
