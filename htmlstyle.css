@@ -38,6 +38,12 @@
     left: 552px;
 }
 
+.plant_key_inventory {
+    position:absolute;
+    left:64px;
+    top:270px;
+}
+
 #charger_key {
     height: 70px;
     position: absolute;
