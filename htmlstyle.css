@@ -15,17 +15,40 @@
 }
 
 #key {
-    height: 114px;
+    height: 115px;
     width: auto;
     position: absolute;
     left: 374px;
-    top: 446px;
+    top: 445px;
+}
+
+#charger {
+    height: 70px;
+    width: auto;
+    position: absolute;
+    left: 1020px;
+    top: 639px;
     cursor: default;
+}
+
+#plant_key {
+    height: 70px;
+    position: absolute;
+    top: 314px;
+    left: 552px;
 }
 
 #thecabinet {
     height:100px;
     width: auto;
+}
+
+#plants {
+    position: absolute;
+    height: 74px;
+    width: auto;
+    left: 909px;
+    top: 411px;
 }
 
 .screwinventory {
@@ -35,8 +58,8 @@
 }
 .keyinventory{
     position: absolute;
-    left:50;
-    top:150;
+    left: 43px;
+    top: 163px;
 }
 
 .material-symbols-outlined {
@@ -198,21 +221,12 @@
     cursor: default;
 }
 
-#charger {
-    height: 75px;
-    width: auto;
-    position: absolute;
-    left: 908px;
-    top: 410px;
-    cursor: default;
-}
-
 #phone {
     height: 43px;
     width: auto;
     position: absolute;
-    left: 160px;
-    top: 524px;
+    left: 458px;
+    top: 684px;
     cursor: default;
 }
 
