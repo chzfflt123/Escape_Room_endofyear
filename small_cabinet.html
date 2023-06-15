@@ -21,33 +21,6 @@
                 min-height:840px;
             }
 
-            #numlock {
-                height: 100px;
-                width: auto;
-                position: absolute;
-                left: 958px;
-                top: 172px;
-                cursor: default;
-            }
-            .screwinventory {
-                position: absolute;
-                left: 50px;
-                top: 72px;
-            }
-            .keyinventory{
-                position: absolute;
-                left:43px;
-                top:163px;
-            }
-
-            .material-symbols-outlined {
-              font-variation-settings:
-              'FILL' 0,
-              'wght' 400,
-              'GRAD' 0,
-              'opsz' 48
-            }
-
         </style>
 
         
@@ -59,11 +32,16 @@
     <a onclick="combination_lock()">
         <img  id="numlock" src = "Images\lock_number_clickable.png"/>
     </a>
+
+    <script src = "Inventory.js"></script>
+
     <div id="bhuiody">
+        <script>
+            printImages();
+        </script>    
+    </div>
 
-    <script src="Inventory.js"></script>
-
-    <!-- Keep at bottom -->
+    
     <script src="scripts/Escape.js"></script>
 </body>
 

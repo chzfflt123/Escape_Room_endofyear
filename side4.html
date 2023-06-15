@@ -19,25 +19,6 @@
                 background-repeat:no-repeat;
                 min-height:840px;
             }
-            #left{
-                left:10px;
-                top: 392px;
-            }
-            #right{
-                left:1340px;
-                top:392px;
-            }
-
-            .screwinventory {
-                position: absolute;
-                left: 50px;
-                top: 72px;
-            }
-            .keyinventory{
-                position: absolute;
-                left:50;
-                top:150;
-            }
         </style>
     </head>
 
@@ -45,9 +26,11 @@
     <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" href="side1.html"><i class="material-icons">chevron_left</i></a>
     <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" href="side3.html"><i class="material-icons">chevron_right</i></a>
 
+    <script src = "Inventory.js"></script>
+
     <div id="bhuiody">
 
-    <img  id="charger" src = "Images/side4_charger.png" onclick = "appendInventory_Charger()"/>
+    <img  id="charger" src = "Images/side4_charger.png" onclick = "appendInventory()"/>
 
     <script>
         function hasitem(){
@@ -56,11 +39,17 @@
                 window.location="charging_phone.html"
             }
         }
+        function appendInventory() {
+            let data = [];
+            data.push('charger');
+            localStorage.setItem('inventory', JSON.stringify(data));
+            window.location = 'side4_nocharger.html';
+            console.log("inside append inventory")
+        }
     </script>
 
+    <img  id="charger" src = "Images/side4_charger.png" onclick = "appendInventory_Charger()"/>
 
-    <script src="Inventory.js"></script>
-    <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
 </body>
 

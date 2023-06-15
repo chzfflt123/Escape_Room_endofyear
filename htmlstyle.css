@@ -38,6 +38,13 @@
     left: 552px;
 }
 
+#charger_key {
+    height: 70px;
+    position: absolute;
+    top: 400px;
+    left: 552px;
+}
+
 #thecabinet {
     height:100px;
     width: auto;

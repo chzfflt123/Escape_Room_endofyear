@@ -26,7 +26,12 @@
     </head>
 
 <body>
-    <div id="bhuiody"></div>
+    <script src = "Inventory.js"></script>
+    <div id="bhuiody">
+        <script>
+            printImages();
+        </script>    
+    </div>
         
     <!-- Trigger/Open The Modal -->
     <img id="myBtn" src="Images/blue_cabinet_justposter.png">
@@ -72,18 +77,6 @@
 
     <a href="side3.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
-
-<script>
-        function appendInventory() {
-            let data = [];
-            data.push('screwdriver');
-            localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'empty_box.html';
-            console.log("inside append inventory")
-        }
-    </script>
-
-<script src="Inventory.js"></script>
     
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
