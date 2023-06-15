@@ -6,6 +6,7 @@ function appendInventory_airconditioner_key() {
 }
 
 function appendInventory_screwdriver() {
+    const inventory = JSON.parse(localStorage.getItem('inventory'));
     let data = [];
     data.push('screwdriver');
     localStorage.setItem('inventory', JSON.stringify(data));
@@ -68,24 +69,24 @@ function printImages(){
         inventoryList.appendChild(img);
         console.log("BYE")
     }
-    if(inventory.includes('charger')){
-        const img = new Image(200,100);
-        img.src = "Images/side4_charger.png";
-        img.className = "chargerinventory";
-        inventoryList.appendChild(img);
-        console.log("BYE")
-    }
     if(inventory.includes('plant_key')){
-        const img = new Image(200,100);
-        img.src = "Images/plant_justkey.png";
-        img.className = "plant_key";
+        const img = new Image(55,90);
+        img.src = "Images/3key.png";
+        img.className = "plant_key_inventory";
         inventoryList.appendChild(img);
         console.log("BYE")
     }
     if(inventory.includes('charger_key')){
         const img = new Image(200,100);
         img.src = "Images/plant_justkey.png";
-        img.className = "charger_key";
+        img.className = "charger_key_inventory";
+        inventoryList.appendChild(img);
+        console.log("BYE")
+    }
+    if(inventory.includes('charger')){
+        const img = new Image(200,100);
+        img.src = "Images/side4_charger.png";
+        img.className = "chargerinventory";
         inventoryList.appendChild(img);
         console.log("BYE")
     }
