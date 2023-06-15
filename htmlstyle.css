@@ -94,11 +94,11 @@
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
+    width: 80%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
 }
     
 .modal-content {
@@ -107,6 +107,11 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#poster1 {
+    height:600px;
+    width:auto;
 }
 
     /* The Close Button */
@@ -129,6 +134,14 @@
     left:200px;
     top:100px;
     width:200px;
+}
+
+#myBtn {
+    position: absolute;
+    height:84px;
+    width: auto;
+    left:423px;
+    top: 655px;
 }
 
 #plant {
@@ -221,7 +234,7 @@
     cursor: default;
 }
 
-#phone {
+.phone {
     height: 43px;
     width: auto;
     position: absolute;
