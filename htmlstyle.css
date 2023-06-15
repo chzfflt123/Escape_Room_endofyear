@@ -234,7 +234,7 @@
     cursor: default;
 }
 
-#phone {
+.phone {
     height: 43px;
     width: auto;
     position: absolute;
