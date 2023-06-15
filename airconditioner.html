@@ -29,24 +29,17 @@
 <body>
     <a href="side2.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
+    <script src = "Inventory.js"></script>
     <div id="bhuiody">
-
-        <script src="Inventory.js"></script>
-
+        <script>
+            printImages();
+        </script>    
+    </div>
         
-        <a onclick="hasitem()">
+        <a onclick="hasitem_screwdriver()">
             <img  id="airconditionercover" src = "Images\airconditioner_toopen_clickable.png"/>
         </a>    
 
-        <script>
-            function hasitem(){
-                const inventory = JSON.parse(localStorage.getItem('inventory'));
-                if(inventory.includes('screwdriver')){
-                    window.location="airconditioner_inside_withkey.html"
-                }
-            }
-        </script>
-    <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
 </body>
 
