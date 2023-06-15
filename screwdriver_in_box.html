@@ -25,27 +25,17 @@
     </head>
 
 <body>
+    <img  id="screwdriver" src = "Images\screwdriver.png" onclick = "appendInventory_screwdriver()"/>
+
+    <a href="side3.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
+
+    <script src = "Inventory.js"></script>
     <div id="bhuiody">
-
-        <img  id="screwdriver" src = "Images\screwdriver.png" onclick = "appendInventory()"/>
-
-        <a href="side3.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
-
-
-<script>
-        function appendInventory() {
-            let data = [];
-            data.push('screwdriver');
-            localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'empty_box.html';
-            console.log("inside append inventory")
-        }
-    </script>
-
-    <script src="general_script.js"></script>
-
-    
-    <!-- Keep at bottom -->
+        <script>
+            printImages();
+        </script>    
+    </div>
+        
     <script src="scripts/Escape.js"></script>
 
 </body>

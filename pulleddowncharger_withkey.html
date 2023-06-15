@@ -26,26 +26,17 @@
     </head>
 
 <body>
+    <script src = "Inventory.js"></script>
     <div id="bhuiody">
+        <script>
+            printImages();
+        </script>    
+    </div>
 
-        <img  id="chargerkey" src = "Images\pulleddowncharger_justkey.png" onclick = "appendInventory()"/>
+    <img  id="chargerkey" src = "Images\pulleddowncharger_justkey.png" onclick = "appendInventory_charger_key()"/>
 
-        <a href="side2.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
+    <a href="side2.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
-
-<script>
-        function appendInventory() {
-            let data = [];
-            data.push('chargerkey');
-            localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'pulleddowncharger_nokey.html';
-            console.log("inside append inventory")
-        }
-    </script>
-    <script src="general_script.js"></script>
-
-    
-    <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
 
 </body>

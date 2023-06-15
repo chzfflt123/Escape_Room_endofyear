@@ -29,27 +29,20 @@
     </head>
 
 <body>
-    <a onclick = "appendInventory()">
+    <a onclick = "appendInventory_plant_key()">
         <img  id="plant_key" src = "Images/plant_justkey.png"/>
     </a>
 
     <a href="plants.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
 
-    <script>
-        function appendInventory() {
-            let data = [];
-            data.push('plant_key');
-            localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'plant_from_top.html';
-        }
-    </script>
+<script src = "Inventory.js"></script>
+    <div id="bhuiody">
+        <script>
+            printImages();
+        </script>    
+    </div>
 
-<div id="bhuiody">
-
-    <script src="general_script.js"></script>
-    
-    <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
 
 </body>
