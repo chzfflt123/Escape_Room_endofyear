@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="/public/stylesheets/stylesheet1.css">
+        <link href="htmlstyle.css" rel="stylesheet" type="text/css"/>
         <title>Escape Room</title>
         <style>
             body {
@@ -18,42 +19,7 @@
                 background-repeat: no-repeat;
                 min-height:840px;
             }
-            #left{
-                left:10px;
-                top: 392px;
-            }
-            #right{
-                left:1340px;
-                top:392px;
-            }
 
-            #bigboard {
-                height: 305px;
-                width: auto;
-                position: absolute;
-                left: 372px;
-                top: 240px;
-                cursor: default;
-            }
-
-            #smallboard {
-                height: 192px;
-                width: auto;
-                position: absolute;
-                left: 1125px;
-                top: 287px;
-                cursor: default;
-            }
-            .screwinventory {
-                position: absolute;
-                left: 50px;
-                top: 72px;
-            }
-            .keyinventory{
-                position: absolute;
-                left:50;
-                top:150;
-            }
         </style>
     </head>
 
@@ -97,8 +63,8 @@
                     console.log("BYE");
                 }
                 if(inventory.includes('airconditioner_key')){
-                    const img = new Image(200,100);
-                    img.src = "Images/airconditioner.png";
+                    const img = new Image(90,85);
+                    img.src = "Images/airconditioner_keyicon.png";
                     img.className = "keyinventory";
                     inventoryList.appendChild(img);
                     console.log("BYE")
