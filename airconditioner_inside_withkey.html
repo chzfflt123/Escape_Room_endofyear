@@ -23,44 +23,17 @@
     </head>
 
 <body>
+    <a onclick = "appendInventory_airconditioner_key()">
+        <img  id="key" src = "Images/airconditioner_key.png"/>
+    </a>
+
 
     <a href="side2.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
-    <a onclick = "appendInventory()">
-        <img id = "key" src = "Images/airconditioner_key.png"/>
-    </a>
-
-    <script>
-        function appendInventory() {
-            let data = [];
-            data.push('airconditioner_key');
-            localStorage.setItem('inventory', JSON.stringify(data));
-            window.location = 'airconditioner_inside.html';
-        }
-    </script>
-
 <div id="bhuiody">
+    
+    <script src="general_script.js"></script>
 
-    <script>
-        const inventory = JSON.parse(localStorage.getItem('inventory'));
-            console.log(inventory)
-
-            const inventoryList = document.getElementById('bhuiody');
-            if(inventory.includes('screwdriver')) {
-                const img = new Image(90, 40); // width, height
-                img.src = "Images/screwdriver.png";
-                img.className = "screwinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE");
-            }
-            if(inventory.includes('airconditioner_key')){
-                const img = new Image(90,85);
-                img.src = "Images/airconditioner_keyicon.png";
-                img.className = "keyinventory";
-                inventoryList.appendChild(img);
-                console.log("BYE")
-            }
-    </script>
     
     <!-- Keep at bottom -->
     <script src="scripts/Escape.js"></script>
