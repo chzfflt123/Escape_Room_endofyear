@@ -107,7 +107,7 @@ function show_plakey(){
     const inventoryList = document.getElementById('plakey');
     if(inplakey.includes('plant_key')){
         const img = new Image(200,100);
-        img.src = "Images/plant_justkey.png";
+        img.src = "Images/3key.png";
         img.className = "plant_key";
         inventoryList.appendChild(img);
         console.log("BYE")
