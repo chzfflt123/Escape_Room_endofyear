@@ -3,6 +3,7 @@
     position:absolute;
     left:300px;
     top:150px;
+    cursor: default;
 }
 
 #screwdriver {
@@ -20,6 +21,7 @@
     position: absolute;
     left: 374px;
     top: 445px;
+    cursor: default;
 }
 
 #charger {
@@ -36,6 +38,7 @@
     position: absolute;
     top: 314px;
     left: 552px;
+    cursor: default;
 }
 
 .plant_key_inventory {
@@ -49,11 +52,13 @@
     position: absolute;
     top: 400px;
     left: 552px;
+    cursor: default;
 }
 
 #thecabinet {
     height:100px;
     width: auto;
+    cursor: default;
 }
 
 #plants {
@@ -62,6 +67,7 @@
     width: auto;
     left: 909px;
     top: 411px;
+    cursor: default;
 }
 
 .screwinventory {
@@ -125,6 +131,7 @@
 #poster1 {
     height:600px;
     width:auto;
+    cursor: default;
 }
 
     /* The Close Button */
@@ -139,7 +146,7 @@
 .close:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
 }
 
 .modal-trigger{
@@ -155,6 +162,7 @@
     width: auto;
     left:423px;
     top: 655px;
+    cursor: default;
 }
 
 #plant {
