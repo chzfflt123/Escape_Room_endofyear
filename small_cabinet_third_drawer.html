@@ -12,40 +12,29 @@
         <link rel="stylesheet" href="/public/stylesheets/stylesheet1.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="htmlstyle.css" rel="stylesheet" type="text/css"/>
         <title>Escape Room</title>
         <style>
             body {
-                background-image: url('images/small_cabinet.jpg');
+                background-image: url('images/small_cabinet_third_drawer.jpg');
                 background-size: cover;
                 background-repeat:no-repeat;
                 min-height:840px;
             }
-
+            
         </style>
-
-        
     </head>
 
 <body>
-    <a href="side2.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
-
-    <a onclick="combination_lock()">
-        <img  id="numlock" src = "Images\lock_number_clickable.png"/>
-    </a>
-
-    <a onclick="hasitem_thirddrawer_key()">
-        <img  id="third_drawer" src = "Images\small_cabinet_third_drawer_clickable.png"/>
-    </a>
+    <a href="small_cabinet.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
 
     <script src = "Inventory.js"></script>
-
     <div id="bhuiody">
         <script>
             printImages();
         </script>    
     </div>
-
-    
+        
     <script src="scripts/Escape.js"></script>
 </body>
 
