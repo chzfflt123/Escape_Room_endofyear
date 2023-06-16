@@ -67,17 +67,9 @@ function hasitem_hammer(){
 
 function hasitem_airconditioner_key(){
     const inventory = JSON.parse(localStorage.getItem('inairkey'));
-    hasitem_thirddrawer_key()
     if (inventory.includes('airconditioner_key')){
         window.location="small_cabinet_third_drawer_withkey.html"
     }
-}
-
-function hasitem_thirddrawer_key(){
-    const inventory = JSON.parse(localStorage.getItem('in3dkey'))
-    if(inventory.includes('thirddrawer_key')){
-        window.location="small_cabinet_third_drawer.html"
-    };
 }
 
 function show_screw(){
