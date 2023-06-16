@@ -1,14 +1,14 @@
 function appendInventory_airconditioner_key() {
     let data = [];
     data.push('airconditioner_key');
-    localStorage.setItem('inventory', JSON.stringify(data));
+    localStorage.setItem('inairkey', JSON.stringify(data));
     window.location = 'airconditioner_inside.html';
 }
 
 function appendInventory_screwdriver() {
     let data = [];
     data.push('screwdriver');
-    localStorage.setItem('inventory', JSON.stringify(data));
+    localStorage.setItem('inscrew', JSON.stringify(data));
     window.location = 'empty_box.html';
     console.log("screwdriver added to inventory");
 }
@@ -16,73 +16,101 @@ function appendInventory_screwdriver() {
 function appendInventory_charger() {
     let data = [];
     data.push('charger');
-    localStorage.setItem('inventory', JSON.stringify(data));
+    localStorage.setItem('incharge', JSON.stringify(data));
     window.location = 'side4_nocharger.html';
 }
 
 function appendInventory_plant_key() {
     let data = [];
     data.push('plant_key');
-    localStorage.setItem('inventory', JSON.stringify(data));
+    localStorage.setItem('inplakey', JSON.stringify(data));
     window.location = 'plant_from_top.html';
 }
 
 function appendInventory_charger_key() {
     let data = [];
     data.push('charger_key');
-    localStorage.setItem('inventory', JSON.stringify(data));
+    localStorage.setItem('incharkey', JSON.stringify(data));
     window.location = 'pulleddowncharger_nokey.html';
     console.log("inside append inventory")
 }
 
 function hasitem_screwdriver(){
-    const inventory = JSON.parse(localStorage.getItem('inventory'));
+    const inventory = JSON.parse(localStorage.getItem('inscrew'));
     if(inventory.includes('screwdriver')){
         window.location="airconditioner_inside_withkey.html"
     }
 }
 
 function hasitem_charger(){
-    const inventory = JSON.parse(localStorage.getItem('inventory'));
+    const incharge = JSON.parse(localStorage.getItem('incharge'));
     if(inventory.includes('charger')){
         window.location="charging_phone.html"
     }
 }
 
-function printImages(){
-    const inventory = JSON.parse(localStorage.getItem('inventory'));
-    console.log(inventory)
+function show_screw(){
+    const inscrew = JSON.parse(localStorage.getItem('inscrew'));
+    console.log(inscrew)
 
-    const inventoryList = document.getElementById('bhuiody');
-    if(inventory.includes('screwdriver')) {
+    const inventoryList = document.getElementById('screw');
+    if(inscrew.includes('screwdriver')) {
         const img = new Image(90, 40); // width, height
         img.src = "Images/screwdriver.png";
         img.className = "screwinventory";
         inventoryList.appendChild(img);
-        console.log("BYE");
+        console.log("screw");
     }
-    if(inventory.includes('airconditioner_key')){
+}
+
+function show_airkey(){
+    const inairkey = JSON.parse(localStorage.getItem('inairkey'));
+    console.log(inairkey)
+
+    const inventoryList = document.getElementById('airkey');
+    if(inairkey.includes('airconditioner_key')){
         const img = new Image(95,85);
         img.src = "Images/airconditioner_keyicon.png";
         img.className = "keyinventory";
         inventoryList.appendChild(img);
-        console.log("BYE")
+        console.log("akey")
     }
-    if(inventory.includes('charger')){
+}
+
+function show_charge(){
+    const incharge = JSON.parse(localStorage.getItem('incharge'));
+    console.log(incharge)
+
+    const inventoryList = document.getElementById('charge');
+    if(incharge.includes('charger')){
         const img = new Image(200,100);
         img.src = "Images/side4_charger.png";
         img.className = "chargerinventory";
         inventoryList.appendChild(img);
         console.log("BYE")
     }
-    if(inventory.includes('plant_key')){
+}
+
+function show_plakey(){
+    const inplakey = JSON.parse(localStorage.getItem('inplakey'));
+    console.log(inplakey)
+
+    const inventoryList = document.getElementById('plakey');
+    if(inplakey.includes('plant_key')){
         const img = new Image(200,100);
         img.src = "Images/plant_justkey.png";
         img.className = "plant_key";
         inventoryList.appendChild(img);
         console.log("BYE")
     }
-    if(inventory.includes('charger_key')){
+}
+
+function show_charkey(){
+    const incharkey = JSON.parse(localStorage.getItem('incharkey'));
+    console.log(inscrew)
+
+    const inventoryList = document.getElementById('charkey');
+    if(incharkey.includes('charger_key')){
         const img = new Image(200,100);
         img.src = "Images/plant_justkey.png";
         img.className = "charger_key";
