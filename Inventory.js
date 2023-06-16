@@ -38,7 +38,7 @@ function appendInventory_charger_key() {
 
 function appendInventory_thirddrawer_key() {
     let data = [];
-    data.push('thirddrawer_key');
+    data.push('airconditioner_key');
     localStorage.setItem('inventory', JSON.stringify(data));
     window.location = 'small_cabinet_third_drawer.html';
     console.log("inside append inventory")
@@ -55,6 +55,13 @@ function hasitem_charger(){
     const incharge = JSON.parse(localStorage.getItem('incharge'));
     if(inventory.includes('charger')){
         window.location="charging_phone.html"
+    }
+}
+
+function hasitem_hammer(){
+    const incharge = JSON.parse(localStorage.getItem('incharge'));
+    if(inventory.includes('hammer')){
+        window.location="crackedwhiteboard_withkey.html"
     }
 }
 
@@ -189,7 +196,7 @@ function sidetable(){
 }
 
 
-function hasitem_thirddrawer_key(){
+function hasitem_airconditioner_key(){
     const inventory = JSON.parse(localStorage.getItem('inventory'));
     if(inventory.includes('thirddrawer_key')){
         window.location="small_cabinet_third_drawer.html"
@@ -197,5 +204,4 @@ function hasitem_thirddrawer_key(){
     else if (inventory.includes('airconditioner_key')){
         window.location="small_cabinet_third_drawer_withkey.html"
     }
-    else window.location="small_cabinet.html"
 }
