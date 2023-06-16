@@ -116,20 +116,13 @@ function show_plakey(){
 
 function show_charkey(){
     const incharkey = JSON.parse(localStorage.getItem('incharkey'));
-    console.log(inscrew)
+    console.log(incharkey)
 
     const inventoryList = document.getElementById('charkey');
     if(incharkey.includes('charger_key')){
         const img = new Image(200,100);
         img.src = "Images/plant_justkey.png";
         img.className = "charger_key_inventory";
-        inventoryList.appendChild(img);
-        console.log("BYE")
-    }
-    if(inventory.includes('charger')){
-        const img = new Image(200,100);
-        img.src = "Images/side4_charger.png";
-        img.className = "chargerinventory";
         inventoryList.appendChild(img);
         console.log("BYE")
     }
