@@ -38,8 +38,8 @@ function appendInventory_charger_key() {
 
 function appendInventory_thirddrawer_key() {
     let data = [];
-    data.push('airconditioner_key');
-    localStorage.setItem('inventory', JSON.stringify(data));
+    data.push('thirddrawer_key');
+    localStorage.setItem('in3dkey', JSON.stringify(data));
     window.location = 'small_cabinet_third_drawer.html';
     console.log("inside append inventory")
 }
@@ -53,16 +53,31 @@ function hasitem_screwdriver(){
 
 function hasitem_charger(){
     const incharge = JSON.parse(localStorage.getItem('incharge'));
-    if(inventory.includes('charger')){
+    if(incharge.includes('charger')){
         window.location="charging_phone.html"
     }
 }
 
 function hasitem_hammer(){
-    const incharge = JSON.parse(localStorage.getItem('incharge'));
-    if(inventory.includes('hammer')){
+    const inham = JSON.parse(localStorage.getItem('incharge'));
+    if(inham.includes('hammer')){
         window.location="crackedwhiteboard_withkey.html"
     }
+}
+
+function hasitem_airconditioner_key(){
+    const inventory = JSON.parse(localStorage.getItem('inairkey'));
+    hasitem_thirddrawer_key()
+    if (inventory.includes('airconditioner_key')){
+        window.location="small_cabinet_third_drawer_withkey.html"
+    }
+}
+
+function hasitem_thirddrawer_key(){
+    const inventory = JSON.parse(localStorage.getItem('in3dkey'))
+    if(inventory.includes('thirddrawer_key')){
+        window.location="small_cabinet_third_drawer.html"
+    };
 }
 
 function show_screw(){
@@ -185,16 +200,5 @@ function sidetable(){
     }  
     else {
         window.location = "screwdriver_in_box.html";
-    }
-}
-
-
-function hasitem_airconditioner_key(){
-    const inventory = JSON.parse(localStorage.getItem('inventory'));
-    if(inventory.includes('thirddrawer_key')){
-        window.location="small_cabinet_third_drawer.html"
-    }
-    else if (inventory.includes('airconditioner_key')){
-        window.location="small_cabinet_third_drawer_withkey.html"
     }
 }
