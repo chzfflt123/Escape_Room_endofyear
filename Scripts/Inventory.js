@@ -51,6 +51,13 @@ function appendInventory_hammer() {
     window.location = 'seconddrawer_nohammer.html';
     console.log("inside append inventory");
 }
+function appendInventory_whiteboard_key() {
+    let data = [];
+    data.push('whiteboard_key');
+    localStorage.setItem('inboardkey', JSON.stringify(data));
+    window.location = 'crackedwhiteboard_nokey.html';
+    console.log("inside append inventory");
+}
 
 
 
@@ -96,6 +103,13 @@ function hasitem_hammer(){
     }
 }
 
+function hasitem_hammer_remove(){
+    const inhammer = JSON.parse(localStorage.getItem('inhammer'));
+    if(inhammer.includes('hammer_inventory')){
+        return true;
+    }
+}
+
 function hasitem_airconditioner_key(){
     const inventory = JSON.parse(localStorage.getItem('inairkey'));
     if (inventory.includes('airconditioner_key')){
@@ -127,6 +141,13 @@ function hasitem_thirddrawer_key(){
 function hasitem_threekeys() {
     if (hasitem_plant_key() && hasitem_charger_key() && hasitem_thirddrawer_key()) {
         window.location = "blue_cabinet_poster.html";
+    }
+}
+
+function hasitem_boardkey() {
+    const inventory = JSON.parse(localStorage.getItem('inboardkey'));
+    if (inventory.includes('whiteboard_key')){
+        window.location = "final_door.html";
     }
 }
 
@@ -252,6 +273,20 @@ function show_hammer(){
     }
 }
 
+function show_whiteboardkey(){
+    const inboardkey = JSON.parse(localStorage.getItem('inboardkey'));
+    console.log(inboardkey)
+
+    const inventoryList = document.getElementById('boardkey');
+    if(inboardkey.includes('whiteboard_key')){
+        const img = new Image(60,36);
+        img.src = "Images/crackedwhiteboard_key_icon.png";
+        img.className = "boardkey_inventory";
+        inventoryList.appendChild(img);
+        console.log("BYE")
+        remove_hammer();
+    }
+}
 
 
 
@@ -328,4 +363,10 @@ function remove_charger() {
     if (hasitem_charger_remove()) {
         document.getElementById("charge").style.visibility = "hidden";
    }
+}
+
+function remove_hammer() {
+    if (hasitem_hammer_remove) {
+        document.getElementById("hammer_inventory").style.visibility = "hidden";
+    }
 }

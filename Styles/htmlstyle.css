@@ -319,3 +319,24 @@
     top: 609px;
     left:43px;
 }
+
+#whiteboard_key {
+    position:absolute;
+    height:12px;
+    top: 641px;
+    left: 950px;
+    transform: rotate(-14deg);
+}
+
+#boardkey {
+    position: absolute;
+    top: 632px;
+    left: 62px;
+}
+
+#final_door {
+    position:absolute;
+    height:343px;
+    top:279px;
+    left:147px;
+}

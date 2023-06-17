@@ -16,16 +16,23 @@
         <title>Escape Room 138A</title>
         <style>
             body {
-                background-image: url('Images/blue_cabinet_poster.jpg');
+                background-image: url('Images/crackedwhiteboard_withkey.jpg');
                 background-size: cover;
-                min-height:840px;
                 background-repeat:no-repeat;
+                min-height:840px;
             }
+            
         </style>
     </head>
 
 <body>
+    <a onclick = "appendInventory_whiteboard_key()">
+        <img id="whiteboard_key" src = "Images/crackedwhiteboard_key_icon.png"/>
+    </a>
+
+    <a href="side1.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
     <script src = "Scripts/Inventory.js"></script>
+
     <div id="screw">
         <script>
             show_screw();
@@ -46,15 +53,15 @@
             show_plakey();
         </script>    
     </div>
-    <div id="drawkey">
-        <script>
-            show_3drawkey();
-        </script>    
-    </div>
     <div id="charkey">
         <script>
             show_charkey();
         </script>    
+    </div>
+    <div id="drawkey">
+        <script>
+            show_3drawkey();
+        </script>
     </div>
     <div id="hammer_inventory">
         <script>
@@ -66,13 +73,9 @@
             show_whiteboardkey();
         </script>
     </div>
+    
 
-        <a href="blue_cabinet_poster.html">
-            <img src = "Images\blue_cabinet_poster.jpg" id= "thecabinet"/>
-        </a>
-        <a href="side3.html"><button style="margin-left:1403px; margin-top:10px" class="btn-floating btn-large waves-effect waves-light blue"><span style="padding-top:16px" class="material-symbols-outlined">close</span></button></a>
-
-    <script src="scripts/Escape.js"></script>
+        <script src="scripts/Escape.js"></script>
 
 </body>
 
