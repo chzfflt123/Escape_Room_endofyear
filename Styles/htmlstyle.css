@@ -43,8 +43,8 @@
 
 .plant_key_inventory {
     position:absolute;
-    left:64px;
-    top:270px;
+    left:68px;
+    top:275px;
 }
 
 #charger_key {
@@ -53,6 +53,12 @@
     top: 400px;
     left: 552px;
     cursor: default;
+}
+
+.charger_key_inventory {
+    position:absolute;
+    top: 388px;
+    left:62px;
 }
 
 #thecabinet {
@@ -185,8 +191,8 @@
 
 .chargerinventory {
     position: absolute;
-    left:40px;
-    top:300px;
+    left:46px;
+    top:515px;
 }
 
 #left{
@@ -261,7 +267,7 @@
     cursor: default;
 }
 
-.phone {
+#phone {
     height: 43px;
     width: auto;
     position: absolute;
@@ -277,4 +283,11 @@
     left: 958px;
     top: 172px;
     cursor: default;
+}
+
+#third_drawer {
+    position: absolute;
+    top: 481px;
+    left: 771px;
+    height:168px;
 }

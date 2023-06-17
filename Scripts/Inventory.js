@@ -142,8 +142,8 @@ function show_charge(){
 
     const inventoryList = document.getElementById('charge');
     if(incharge.includes('charger')){
-        const img = new Image(200,100);
-        img.src = "Images/side4_charger.png";
+        const img = new Image(90,50);
+        img.src = "Images/charger_icon.png";
         img.className = "chargerinventory";
         inventoryList.appendChild(img);
         console.log("BYE")
@@ -156,9 +156,9 @@ function show_plakey(){
 
     const inventoryList = document.getElementById('plakey');
     if(inplakey.includes('plant_key')){
-        const img = new Image(200,100);
+        const img = new Image(45,80);
         img.src = "Images/3key.png";
-        img.className = "plant_key";
+        img.className = "plant_key_inventory";
         inventoryList.appendChild(img);
         console.log("BYE")
     }
@@ -170,8 +170,8 @@ function show_charkey(){
 
     const inventoryList = document.getElementById('charkey');
     if(incharkey.includes('charger_key')){
-        const img = new Image(200,100);
-        img.src = "Images/plant_justkey.png";
+        const img = new Image(60,80);
+        img.src = "Images/pulleddowncharger_justkey.png";
         img.className = "charger_key_inventory";
         inventoryList.appendChild(img);
         console.log("BYE")
