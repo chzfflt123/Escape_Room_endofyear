@@ -241,7 +241,7 @@ function show_hammer(){
     const inventoryList = document.getElementById('hammer_inventory');
     if(inhammer.includes('hammer_inventory')){
         const img = new Image(100,80);
-        img.src = "Images/small_cabinet_second_drawer_hammer_clickable.png";
+        img.src = "Images/hammer_icon.png"
         img.className = "hammer_inventory";
         inventoryList.appendChild(img);
         console.log("BYE")
