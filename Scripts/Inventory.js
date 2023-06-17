@@ -44,6 +44,19 @@ function appendInventory_thirddrawer_key() {
     console.log("inside append inventory")
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 function hasitem_screwdriver(){
     const inventory = JSON.parse(localStorage.getItem('inscrew'));
     if(inventory.includes('screwdriver')){
@@ -51,12 +64,41 @@ function hasitem_screwdriver(){
     }
 }
 
+function hasitem_thirddrawer_key(){
+    const inventory = JSON.parse(localStorage.getItem('indrawkey'));
+    if(inventory.includes('thirddrawer_key')){
+        window.location="small_cabinet_third_drawer.html"
+    }
+    else if (inventory.includes('airconditioner_key')){
+        window.location="small_cabinet_third_drawer_withkey.html"
+    }
+    else window.location="small_cabinet.html"
+}
+
 function hasitem_charger(){
-    const incharge = JSON.parse(localStorage.getItem('incharge'));
+    const inventory = JSON.parse(localStorage.getItem('incharge'));
     if(inventory.includes('charger')){
         window.location="charging_phone.html"
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function show_screw(){
     const inscrew = JSON.parse(localStorage.getItem('inscrew'));
@@ -128,6 +170,39 @@ function show_charkey(){
     }
 }
 
+function show_3drawkey(){
+    const indrawkey = JSON.parse(localStorage.getItem('indrawkey'));
+    console.log(indrawkey)
+
+    const inventoryList = document.getElementById('drawkey');
+    if(indrawkey.includes('thirddrawer_key')){
+        const img = new Image(200,100);
+        img.src = "Images/plant_justkey.png";
+        img.className = "charger_key_inventory";
+        inventoryList.appendChild(img);
+        console.log("BYE")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function checkside4(){
     const inventory = JSON.parse(localStorage.getItem('inventory'));
 
@@ -179,16 +254,4 @@ function sidetable(){
     else {
         window.location = "screwdriver_in_box.html";
     }
-}
-
-
-function hasitem_thirddrawer_key(){
-    const inventory = JSON.parse(localStorage.getItem('inventory'));
-    if(inventory.includes('thirddrawer_key')){
-        window.location="small_cabinet_third_drawer.html"
-    }
-    else if (inventory.includes('airconditioner_key')){
-        window.location="small_cabinet_third_drawer_withkey.html"
-    }
-    else window.location="small_cabinet.html"
 }
