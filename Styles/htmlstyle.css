@@ -291,3 +291,18 @@
     left: 771px;
     height:168px;
 }
+
+#thirddrawer_key {
+    position: absolute;
+    height:55px;
+    top: 580px;
+    left: 595px;
+}
+
+.thirddrawer_key_inventory {
+    position: absolute;
+    top:607px;
+    left:75px;
+    transform: rotate(-120deg);
+    filter: brightness(65%);
+}

@@ -39,7 +39,7 @@ function appendInventory_charger_key() {
 function appendInventory_thirddrawer_key() {
     let data = [];
     data.push('thirddrawer_key');
-    localStorage.setItem('in3dkey', JSON.stringify(data));
+    localStorage.setItem('indrawkey', JSON.stringify(data));
     window.location = 'small_cabinet_third_drawer.html';
     console.log("inside append inventory")
 }
@@ -184,9 +184,9 @@ function show_3drawkey(){
 
     const inventoryList = document.getElementById('drawkey');
     if(indrawkey.includes('thirddrawer_key')){
-        const img = new Image(200,100);
-        img.src = "Images/plant_justkey.png";
-        img.className = "charger_key_inventory";
+        const img = new Image(40,80);
+        img.src = "Images/draw_key.png";
+        img.className = "thirddrawer_key_inventory";
         inventoryList.appendChild(img);
         console.log("BYE")
     }
