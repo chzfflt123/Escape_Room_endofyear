@@ -192,7 +192,7 @@
 .chargerinventory {
     position: absolute;
     left:46px;
-    top:515px;
+    top:625px;
 }
 
 #left{
@@ -301,8 +301,15 @@
 
 .thirddrawer_key_inventory {
     position: absolute;
-    top:607px;
+    top:495px;
     left:75px;
     transform: rotate(-120deg);
     filter: brightness(65%);
+}
+
+#hammer {
+    position: absolute;
+    top: 386px;
+    left: 520px;
+    height:200px;
 }

@@ -22,6 +22,7 @@ function updateCode(id) {
 function checkCode() {
     if (document.getElementById('display').innerText == combinationCode) {
         window.close();
+        window.open("seconddrawer_withhammer.html");
     }
     else {
         document.getElementById('display').innerText = "";

@@ -85,6 +85,33 @@ function hasitem_airconditioner_key(){
     }
 }
 
+function hasitem_plant_key(){
+    const inventory = JSON.parse(localStorage.getItem('inplakey'));
+    if (inventory.includes('plant_key')){
+        return true;
+    }
+}
+
+function hasitem_charger_key(){
+    const inventory = JSON.parse(localStorage.getItem('incharkey'));
+    if (inventory.includes('charger_key')){
+        return true;
+    }
+}
+
+function hasitem_thirddrawer_key(){
+    const inventory = JSON.parse(localStorage.getItem('indrawkey'));
+    if (inventory.includes('thirddrawer_key')){
+        return true;
+    }
+}
+
+function hasitem_threekeys() {
+    if (hasitem_plant_key() && hasitem_charger_key() && hasitem_thirddrawer_key()) {
+        window.location = "blue_cabinet_poster.html";
+    }
+}
+
 
 
 
