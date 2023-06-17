@@ -313,3 +313,9 @@
     left: 520px;
     height:200px;
 }
+
+#hammer_inventory {
+    position:absolute;
+    top: 609px;
+    left:43px;
+}

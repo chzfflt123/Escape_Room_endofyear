@@ -44,6 +44,14 @@ function appendInventory_thirddrawer_key() {
     console.log("inside append inventory")
 }
 
+function appendInventory_hammer() {
+    let data = [];
+    data.push('hammer_inventory');
+    localStorage.setItem('inhammer', JSON.stringify(data));
+    window.location = 'seconddrawer_nohammer.html';
+    console.log("inside append inventory");
+}
+
 
 
 
@@ -71,10 +79,20 @@ function hasitem_charger(){
     }
 }
 
+function hasitem_charger_remove(){
+    const inventory = JSON.parse(localStorage.getItem('incharge'));
+    if(inventory.includes('charger')){
+        return true;
+    }
+}
+
 function hasitem_hammer(){
-    const inham = JSON.parse(localStorage.getItem('incharge'));
-    if(inham.includes('hammer')){
-        window.location="crackedwhiteboard_withkey.html"
+    const inhammer = JSON.parse(localStorage.getItem('inhammer'));
+    if(inhammer.includes('hammer_inventory')){
+        window.location = "crackedwhiteboard_withkey.html";
+    }
+    else {
+        window.location = "big_board.html";
     }
 }
 
@@ -219,6 +237,21 @@ function show_3drawkey(){
     }
 }
 
+function show_hammer(){
+    const inhammer = JSON.parse(localStorage.getItem('inhammer'));
+    console.log(inhammer)
+
+    const inventoryList = document.getElementById('hammer_inventory');
+    if(inhammer.includes('hammer_inventory')){
+        const img = new Image(100,80);
+        img.src = "Images/small_cabinet_second_drawer_hammer_clickable.png";
+        img.className = "hammer_inventory";
+        inventoryList.appendChild(img);
+        console.log("BYE")
+        remove_charger();
+    }
+}
+
 
 
 
@@ -289,4 +322,10 @@ function sidetable(){
     else {
         window.location = "screwdriver_in_box.html";
     }
+}
+
+function remove_charger() {
+    if (hasitem_charger_remove()) {
+        document.getElementById("charge").style.visibility = "hidden";
+   }
 }
