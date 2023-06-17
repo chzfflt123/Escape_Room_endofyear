@@ -340,3 +340,10 @@
     top:279px;
     left:147px;
 }
+
+#final_door_cropped {
+    position:absolute;
+    height:770px;
+    top:40px;
+    left:620px;
+}
