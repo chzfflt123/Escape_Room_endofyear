@@ -59,19 +59,6 @@ function appendInventory_whiteboard_key() {
     console.log("inside append inventory");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 function hasitem_screwdriver(){
     const inventory = JSON.parse(localStorage.getItem('inscrew'));
     if(inventory.includes('screwdriver')){
