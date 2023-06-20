@@ -24,6 +24,11 @@
     </head>
 
 <body>
+    <script>
+        const inventory = JSON.parse(localStorage.getItem('inventory'));
+        console.log(inventory);
+        document.getElementById("charge").style.visibility = "hidden";
+    </script>
     <a class="btn-floating btn-large waves-effect waves-light blue" id= "left" href="side2.html"><i class="material-icons">chevron_left</i></a>
     
     <a class="btn-floating btn-large waves-effect waves-light blue" id = "right" onclick=checkside4_ver2()><i class="material-icons">chevron_right</i></a>

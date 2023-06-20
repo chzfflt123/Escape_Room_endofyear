@@ -88,6 +88,9 @@ function hasitem_charger_remove(){
 
 function hasitem_hammer(){
     const inhammer = JSON.parse(localStorage.getItem('inhammer'));
+    if (inhammer == null) {
+        window.location = "big_board.html";
+    }
     if(inhammer.includes('hammer_inventory')){
         window.location = "crackedwhiteboard_withkey.html";
     }
@@ -306,11 +309,11 @@ function checkside4_ver2(){
         window.location = "side4.html";
         console.log("1");
     }
-    if (inventory.includes('charger')==false) {
+    if (hasitem_charger_remove() == false) {
         window.location = "side4.html";
         console.log("2");
     }
-    else if(inventory.includes('charger')) {
+    else if(hasitem_charger_remove()) {
         window.location = "side4_nocharger.html";
         console.log("3");
     }  
