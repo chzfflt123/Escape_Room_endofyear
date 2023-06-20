@@ -84,6 +84,7 @@ function hasitem_charger_remove(){
     if(inventory.includes('charger')){
         return true;
     }
+    return false;
 }
 
 function hasitem_hammer(){
